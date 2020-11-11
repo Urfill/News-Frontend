@@ -9,5 +9,6 @@ module.exports = {
   rules: {
     'global-require': 1,
     'import/no-extraneous-dependencies': 1,
+    'no-unused-vars': 1,
   },
 };

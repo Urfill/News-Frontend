@@ -1,14 +1,15 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// добавили плагин
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackMd5Hash = require('webpack-md5-hash'); // добавили плагин
+
 module.exports = {
   entry: { main: './src/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js',
   },
+  // указали путь к файлу, в квадратных скобках куда вставлять сгенерированный хеш
   module: {
     rules: [
       {
@@ -20,12 +21,12 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'], // добавили минификацию CSS
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({ //
+    new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css',
     }),
     new HtmlWebpackPlugin({
@@ -33,6 +34,6 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html',
     }),
-    new WebpackMd5Hash(),
+    // new WebpackMd5Hash(), // ERR!
   ],
 };
