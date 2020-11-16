@@ -8,7 +8,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 
-// const ghpages = require('gh-pages');
+const ghpages = require('gh-pages');
 
 module.exports = {
   entry: {
@@ -56,10 +56,10 @@ module.exports = {
         },
       }],
     },
-    // {
-    //   test: /\.(eot|ttf|woff|woff2)$/,
-    //   loader: 'file-loader?name=./vendor/[name].[ext]',
-    // },
+    {
+      test: /\.(eot|ttf|woff|woff2)$/,
+      loader: 'file-loader?name=./vendor/[name].[ext]',
+    },
     ],
   },
   plugins: [
@@ -76,10 +76,10 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      template: path.join(__dirname, './src/index.html'),
+      template: './src/index.html',
       filename: 'index.html',
     }),
-    // new WebpackMd5Hash(),
+    new WebpackMd5Hash(),
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(process.env.NODE_ENV),
     }),
