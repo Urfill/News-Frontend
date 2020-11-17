@@ -1,0 +1,8 @@
+@import url('./search-section__search-button/search-section__search-button.css');
+@import url('./search-section__search-input/search-section__search-input.css');
+
+.search-section__search-field {
+    display: flex;
+    position: relative;
+    margin-top: 64px;
+}

@@ -1,0 +1,9 @@
+@import url('./header/header.css');
+@import url('./search-section/search-section.css');
+
+.header-section {
+    background-image: url('../../images/main.svg');
+    height: 576px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

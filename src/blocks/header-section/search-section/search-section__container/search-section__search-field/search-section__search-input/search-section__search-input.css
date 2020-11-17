@@ -1,0 +1,13 @@
+.search-section__search-input {
+    width: -webkit-fill-available;
+    height: 64px;
+    background-color: #fff;
+    padding-left: 5%;
+    border: 2px solid #00f0;
+    border-radius: 100px;
+}
+
+.search-section__search-input::placeholder {
+    color: gray;
+    font-size: 16px;
+  }

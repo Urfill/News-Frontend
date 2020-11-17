@@ -1,2 +1,4 @@
 @import url('../vendor/normalize.css');
-@import url('../blocks/header/header.css');
+
+@import url('../blocks/navigation-link/navigation-link.css');
+@import url('../blocks/header-section/header-section.css');

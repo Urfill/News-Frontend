@@ -12,55 +12,62 @@
 
 <body>
     <div class="page">
-        <header class="header">
-            <img src="<%=require('./images/logo.svg')%>" alt="NewsExplorer" class="logo">
 
-            <nav class="header__navigation">
-                <button class="button header__link-main-page">Главная</button>
-                <button class="button header__auth">Авторизоваться</button>
-            </nav>
-        </header>
+        <section class="header-section">
+            <header class="header">
+                <a href="/" class="header__link-logo">
+                    <img src="<%=require('./images/logo.svg')%>" alt="NewsExplorer" class="header__logo">
+                </a>
+
+                <nav class="header__navigation">
+                    <a href="/" class="navigation-link header__link-main-page">Главная</a>
+                    <a href="#" class="navigation-link header__link-auth">Авторизоваться</a>
+                </nav>
+            </header>
 
 
-        <main class="main">
+            <div class="search-section">
+                <div class="search-section__container">
+                    <h1 class="search-section__title">Что творится в мире?</h1>
 
-            <section class="search-section">
-                <h1 class="search-section__title">Что творится в мире?</h1>
+                    <p class="search-section__paragraph">Находите самые свежие статьи на любую тему и сохраняйте в
+                        своём
+                        личном кабинете.</p>
 
-                <p class="search-section__paragraph">Находите самые свежие статьи на любую тему и сохраняйте в своём
-                    личном кабинете.</p>
+                    <div class="search-section__search-field">
+                        <input class="search-section__search-input" type="text" placeholder="Введите тему новости">
+                        <button class="button search-section__search-button">Искать</button>
+                    </div>
 
-                <div class="search-section__search-container">
-                    <input class="search-section__search-input" type="text" placeholder="Введите тему новости">
-                    <button class="button search-section__search-button">Искать</button>
-                    <p class="search-section__search-err">Ля-ля-ля я ошибка</p>
+                    <div class="search-section__err-field">
+                        <p class="search-section__err-message">Ля-ля-ля я ошибка</p>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
 
-            <section class="author-wrapper">
-                <img class="author-wrapper__photo" src="" alt="authtor-photo"></img>
+        <section class="body-section">
+            <img class="body-section__photo" src="" alt="authtor-photo"></img>
 
-                <div class="author-wrapper__about">
-                    <h2 class="author-wrapper__title">Об авторе</h2>
-                    <p class="author-wrapper__author-about">Это блок с описанием автора проекта. Здесь следует указать,
-                        как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-                    <p class="author-wrapper__author-about">Также можно рассказать о процессе обучения в Практикуме,
-                        чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
-                </div>
-            </section>
-
-        </main>
+            <div class="body-section__about">
+                <h2 class="body-section__title">Об авторе</h2>
+                <p class="body-section__author-about">Это блок с описанием автора проекта. Здесь следует указать,
+                    как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+                <p class="body-section__author-about">Также можно рассказать о процессе обучения в Практикуме,
+                    чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+            </div>
+        </section>
 
 
-        <footer class="footer">
-            <p class="footer__copyrights">© 2020 Supersite, Powered by News API</p>
+        <footer class="footer-section">
+            <p class="footer-section__copyrights">© 2020 Supersite, Powered by News API</p>
 
-            <nav class="footer__navigation">
-                <button class="button footer__link-main-page"></button>
-                <button class="button footer__link-yandex"></button>
-                <button class="button footer__link-gh"></button>
-                <button class="button footer__link-fb"></button>
+            <nav class="footer-section__navigation">
+                <a href="#" class="footer-section__link-main-page"></a>
+                <a href="#" class="footer-section__link-yandex"></a>
+                <a href="#" class="footer-section__link-gh"></a>
+                <a href="#" class="footer-section__link-fb"></a>
             </nav>
         </footer>
     </div>

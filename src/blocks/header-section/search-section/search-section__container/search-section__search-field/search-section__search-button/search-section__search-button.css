@@ -1,0 +1,11 @@
+.search-section__search-button {
+    position: absolute;
+    right: 0;
+    height: 70px;
+    width: 168px;
+    background-color: #2f71e5;
+    color: #fff;
+    border: 1px;
+    border-radius: 100px;
+    cursor: pointer;
+}

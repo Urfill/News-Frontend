@@ -1,0 +1,6 @@
+.header__link-auth {
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 100px;
+    padding: 12px;
+}

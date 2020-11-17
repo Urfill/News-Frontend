@@ -1,0 +1,3 @@
+# ignoring libs and hash folders.
+dist/*
+node_modules/*

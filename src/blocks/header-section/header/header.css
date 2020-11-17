@@ -1,0 +1,11 @@
+@import url('./header__navigation/header__navigation.css');
+@import url('./header__link-logo/header__link-logo.css');
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid;
+    border-color: #ffffff7a;
+}
