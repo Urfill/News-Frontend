@@ -11,7 +11,7 @@
     "lint": "eslint ./",
     "LF": "eslint ./ --fix",
 
-    "git": "git add . && git commit -m 'test'",
+    "git": "git add . && git commit -m",
     "push": "git push --all"
   },
   "repository": {
