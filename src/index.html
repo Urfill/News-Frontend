@@ -20,8 +20,8 @@
                 </a>
 
                 <nav class="header__navigation">
-                    <a href="/" class="navigation-link header__link-main-page">Главная</a>
-                    <a href="#" class="navigation-link header__link-auth">Авторизоваться</a>
+                    <a href="/" class="standart-text standart-text_white link header__link-main-page">Главная</a>
+                    <a href="#" class="standart-text standart-text_white link header__link-auth">Авторизоваться</a>
                 </nav>
             </header>
 
@@ -30,7 +30,8 @@
                 <div class="search-section__container">
                     <h1 class="search-section__title">Что творится в мире?</h1>
 
-                    <p class="search-section__paragraph">Находите самые свежие статьи на любую тему и сохраняйте в
+                    <p class="standart-text standart-text_white search-section__paragraph">Находите самые свежие статьи
+                        на любую тему и сохраняйте в
                         своём
                         личном кабинете.</p>
 
@@ -48,26 +49,38 @@
 
 
         <section class="body-section">
-            <img class="body-section__photo" src="" alt="authtor-photo"></img>
+            <img class="body-section__photo" src="<%=require('./images/author-photo.png')%>" alt="author-photo"></img>
 
             <div class="body-section__about">
                 <h2 class="body-section__title">Об авторе</h2>
-                <p class="body-section__author-about">Это блок с описанием автора проекта. Здесь следует указать,
-                    как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-                <p class="body-section__author-about">Также можно рассказать о процессе обучения в Практикуме,
-                    чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+                <p class="standart-text standart-text_black body-section__author-about">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum</p>
+                <p class="standart-text standart-text_black body-section__author-about">Sed ut perspiciatis unde omnis
+                    iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                    quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                    ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                    dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                    dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                    labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
             </div>
         </section>
 
 
         <footer class="footer-section">
-            <p class="footer-section__copyrights">© 2020 Supersite, Powered by News API</p>
+            <p class="standart-text footer-section__copyrights">© 2020 Supersite, Powered by News API</p>
 
             <nav class="footer-section__navigation">
-                <a href="#" class="footer-section__link-main-page"></a>
-                <a href="#" class="footer-section__link-yandex"></a>
-                <a href="#" class="footer-section__link-gh"></a>
-                <a href="#" class="footer-section__link-fb"></a>
+                <a href="#" class="link standart-text standart-text_black footer-section__link-main-page">Главная</a>
+                <a href="#" class="link standart-text standart-text_black footer-section__link-yandex">Яндекс.Практикум</a>
+                <a href="#" class="link footer-section__link-gh">f09b</a>
+                <a href="#" class="link footer-section__link-fb"></a>
             </nav>
         </footer>
     </div>

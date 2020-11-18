@@ -1,0 +1,11 @@
+@import url('./_white/standart-text_white.css');
+@import url('./_black/standart-text_black.css');
+
+.standart-text {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    text-decoration: none;
+
+}
