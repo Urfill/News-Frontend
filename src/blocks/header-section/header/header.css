@@ -1,5 +1,8 @@
-@import url('./header__navigation/header__navigation.css');
-@import url('./header__link-logo/header__link-logo.css');
+@import url('./__navigation/header__navigation.css');
+@import url('./__logo/header__logo.css');
+@import url('./__link-auth/header__link-auth.css');
+@import url('./__link-logo/header__link-logo.css');
+@import url('./__link-main-page/header__link-main-page.css');
 
 .header {
     display: flex;

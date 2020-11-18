@@ -1,4 +1,11 @@
-@import url('./search-section__container/search-section__container.css');
+@import url('./__container/search-section__container.css');
+@import url('./__err-field/search-section__err-field.css');
+@import url('./__err-message/search-section__err-message.css');
+@import url('./__paragraph/search-section__paragraph.css');
+@import url('./__search-button/search-section__search-button.css');
+@import url('./__search-field/search-section__search-field.css');
+@import url('./__search-input/search-section__search-input.css');
+@import url('./__title/search-section__title.css');
 
 .search-section {
     display: flex;

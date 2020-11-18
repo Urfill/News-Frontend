@@ -1,0 +1,5 @@
+.search-section__search-field {
+    display: flex;
+    position: relative;
+    margin-top: 64px;
+}

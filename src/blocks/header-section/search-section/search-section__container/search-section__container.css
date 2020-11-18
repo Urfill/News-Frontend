@@ -1,8 +1,0 @@
-@import url('./search-section__paragraph/search-section__paragraph.css');
-@import url('./search-section__search-field/search-section__search-field.css');
-@import url('./search-section__title/search-section__title.css');
-@import url('./search-section__err-field/search-section__err-field.css');
-
-.search-section__container {
-    width: 30%;
-}

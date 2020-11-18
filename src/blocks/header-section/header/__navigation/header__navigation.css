@@ -1,6 +1,3 @@
-@import url('./header__link-auth/header__link-auth.css');
-@import url('./header__link-main-page/header__link-main-page.css');
-
 .header__navigation {
     display: flex;
     justify-content: space-around;
