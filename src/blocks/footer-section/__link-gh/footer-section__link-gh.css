@@ -1,5 +1,3 @@
 .footer-section__link-gh {
-    width: 5px;
-    height: 5px;
-    border: 1px solid red;
+    margin: 0 5px;
 }

@@ -2,5 +2,8 @@
     width: 464px;
     height: 464px;
     margin-right: 156px;
-
+    border-radius: 100%;
+    border: 1px solid black;
+    object-fit: none;
+    /* object-fit: contain; */
 }

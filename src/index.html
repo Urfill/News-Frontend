@@ -49,7 +49,7 @@
 
 
         <section class="body-section">
-            <img class="body-section__photo" src="<%=require('./images/author-photo.png')%>" alt="author-photo"></img>
+            <img class="body-section__photo" src="<%=require('./images/author-photo.jpg')%>" alt="author-photo"></img>
 
             <div class="body-section__about">
                 <h2 class="body-section__title">Об авторе</h2>
@@ -77,10 +77,17 @@
             <p class="standart-text footer-section__copyrights">© 2020 Supersite, Powered by News API</p>
 
             <nav class="footer-section__navigation">
-                <a href="#" class="link standart-text standart-text_black footer-section__link-main-page">Главная</a>
-                <a href="#" class="link standart-text standart-text_black footer-section__link-yandex">Яндекс.Практикум</a>
-                <a href="#" class="link footer-section__link-gh">f09b</a>
-                <a href="#" class="link footer-section__link-fb"></a>
+                <a href="/" class="link standart-text standart-text_black footer-section__link-main-page">Главная</a>
+                <a href="https://meduza.io/feature/2016/06/01/kto-kruche-yandeks-ili-google"
+                target="_blank" class="link standart-text standart-text_black footer-section__link-google">
+                    <i class="fa fa-google"></i>
+                </a>
+                <a href="https://github.com/" target="_blank" class="link standart-text standart-text_black footer-section__link-gh">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="https://vk.com/sekizo" target="_blank" class="link standart-text standart-text_black footer-section__link-fb">
+                    <i class="fa fa-vk"></i>
+                </a>
             </nav>
         </footer>
     </div>
