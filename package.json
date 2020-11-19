@@ -10,7 +10,8 @@
     "lint": "eslint ./",
     "LF": "eslint ./ --fix",
     "git": "git add . && git commit -m",
-    "push": "git push --all"
+    "push": "git push --all",
+    "p": "git push --all"
   },
   "repository": {
     "type": "git",

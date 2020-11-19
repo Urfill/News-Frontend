@@ -1,5 +1,13 @@
 @import url('./_hidden/search-result__card_hidden.css');
 
 .search-result__card {
-
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 400px;
+    height: 576px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    border-radius: 20px;
+    background-color: white;
 }

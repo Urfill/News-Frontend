@@ -1,5 +1,7 @@
 @import url('./_hidden/search-result__show-more-container_hidden.css');
 
 .search-result__show-more-container {
-
+    align-self: center;
+    margin-top: 64px;
+    /* margin-bottom: 80px; */
 }

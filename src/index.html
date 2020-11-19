@@ -8,7 +8,7 @@
     <meta name="author" content="Sekizo">
     <link rel="shortcut icon" href="<%=require('./images/favicon/favicon.png')%>" type="image/x-icon">
     <meta name="description" content="News Explorer - поиск, это просто!">
-    <title>NewsExplorer</title>
+    <title>News > Explorer</title>
 </head>
 
 <body>
@@ -22,8 +22,7 @@
 
                 <nav class="header__navigation">
                     <a href="/" class="standart-text standart-text_white link header__link-main-page">Главная</a>
-                    <a href="./2.html"
-                        class="standart-text standart-text_white link header__link-auth">Авторизоваться</a>
+                    <a href="/" class="standart-text standart-text_white link header__link-auth">Авторизоваться</a>
                     <a href="#"
                         class="standart-text standart-text_white link link_hidden header__link-saved">Сохраненные
                         статьи</a>
@@ -57,32 +56,89 @@
         </section>
 
 
-        <section class="search-result">
+        <section class="search-result search-result_hidden">
 
-            <div class="search-result__card-container">
-                <div class="search-result__card">
-                    <div class="search-result__card-image-container">
-                        <img src="" alt="" class="search-result__card-image">
-                        <img src="" alt="" class="search-result__mark">
-                        <div class="search-result__mark-alert-container">
-                            <p class="search-result__mark-alert search-result__mark-alert_hidden">Войдите, чтобы
-                                сохранять статьи</p>
+            <div class="search-result__container">
+                <p class="search-result__title">Результаты поиска</p>
+
+                <div class="search-result__card-container">
+
+                    <div class="search-result__card">
+                        <div class="search-result__card-image-container">
+                            <div class="search-result__mark-alert-container search-result__mark-alert-container_hidden">
+                                <p class="search-result__mark-alert search-result__mark-alert_hidden">Войдите, чтобы
+                                    сохранять статьи</p>
+                            </div>
+
+                                <button class="search-result__mark"></button>
+
+                            <img src="<%=require('./images/card1.jpg')%>" alt="search-result__card-image"
+                                class="search-result__card-image">
+
                         </div>
-                    </div>
 
-                    <div class="search-result__card-info-container">
-                        <p class="search-result__date">2 августа, 2019</p>
-                        <p class="search-result__title">Национальное достояние – парки</p>
-                        <p class="search-result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                            начала складываться система национальных парков – охраняемых территорий, где и сегодня
-                            каждый может приобщиться к природе.</p>
-                        <p class="search-result__source">Лента.ру</p>
-                    </div>
+                        <div class="search-result__card-info-container">
+                            <p class="search-result__date">2 августа, 2019</p>
+                            <p class="search-result__card-title">Национальное достояние – парки</p>
+                            <p class="search-result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад
+                                здесь
+                                начала складываться система национальных парков – охраняемых территорий, где и сегодня
+                                каждый может приобщиться к природе.</p>
+                            <p class="search-result__source">ЛЕНТА.РУ</p>
+                        </div>
+                    </div> 
+
+                    <div class="search-result__card">
+                        <div class="search-result__card-image-container">
+                            <div class="search-result__mark-alert-container search-result__mark-alert-container_hidden">
+                                <p class="search-result__mark-alert search-result__mark-alert_hidden">Войдите, чтобы
+                                    сохранять статьи</p>
+                            </div>
+
+                                <button class="search-result__mark"></button>
+
+                            <img src="<%=require('./images/card2.jpg')%>" alt="search-result__card-image"
+                                class="search-result__card-image">
+
+                        </div>
+
+                        <div class="search-result__card-info-container">
+                            <p class="search-result__date">2 августа, 2019</p>
+                            <p class="search-result__card-title">Лесные огоньки: история одной фотографии</p>
+                            <p class="search-result__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного 
+                                из местных чудес природы.</p>
+                            <p class="search-result__source">МЕДУЗА</p>
+                        </div>
+                    </div> 
+
+                    <div class="search-result__card">
+                        <div class="search-result__card-image-container">
+                            <div class="search-result__mark-alert-container search-result__mark-alert-container_hidden">
+                                <p class="search-result__mark-alert search-result__mark-alert_hidden">Войдите, чтобы
+                                    сохранять статьи</p>
+                            </div>
+
+                                <button class="search-result__mark"></button>
+
+                            <img src="<%=require('./images/card3.jpg')%>" alt="search-result__card-image"
+                                class="search-result__card-image">
+
+                        </div>
+
+                        <div class="search-result__card-info-container">
+                            <p class="search-result__date">2 августа, 2019</p>
+                            <p class="search-result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</p>
+                            <p class="search-result__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                            <p class="search-result__source">РИА</p>
+                        </div>
+                    </div> 
+
                 </div>
-            </div>
 
-            <div class="search-result__show-more-container">
-                <a href="/" class="search-result__show-more-link">Показать еще</a>
+                <div class="search-result__show-more-container">
+                    <button class="link standart-text_black search-result__show-more-button">Показать еще</button>
+                </div>
+
             </div>
 
         </section>
@@ -113,7 +169,7 @@
         </section>
 
 
-        <section class="popup-section popup-section_hidden">
+        <section class="popup-section">
 
             <div class="popup-section__login popup-section__login_hidden">
                 <img src="<%=require('./images/close.svg')%>" class="popup-section__close">
@@ -172,7 +228,7 @@
                 <p class="popup-section__sentence">или <a href="/" class="popup-section__link-auth">Войти</a></p>
             </div>
 
-            <div class="popup-section__alert popup-section__alert_hidden">
+            <div class="popup-section__alert ">
                 <img src="<%=require('./images/close.svg')%>" class="popup-section__close">
                 <p class="popup-section__message">Пользователь успешно зарегистрирован!</p>
                 <a href="/" class="popup-section__link-auth">Войти</a>
