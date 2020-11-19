@@ -21,9 +21,14 @@
 
                 <nav class="header__navigation">
                     <a href="/" class="standart-text standart-text_white link header__link-main-page">Главная</a>
-                    <a href="./2.html" class="standart-text standart-text_white link header__link-auth">Авторизоваться</a>
-                    <a href="#" class="standart-text standart-text_white link link_hidden header__link-saved">Сохраненные статьи</a>
-                    <a href="#" class="standart-text standart-text_white link link_hidden header__link-logout">Выход&nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                    <a href="./2.html"
+                        class="standart-text standart-text_white link header__link-auth">Авторизоваться</a>
+                    <a href="#"
+                        class="standart-text standart-text_white link link_hidden header__link-saved">Сохраненные
+                        статьи</a>
+                    <a href="#"
+                        class="standart-text standart-text_white link link_hidden header__link-logout">Выход&nbsp;&nbsp;<i
+                            class="fa fa-sign-out" aria-hidden="true"></i></a>
                 </nav>
             </header>
 
@@ -74,9 +79,43 @@
             </div>
         </section>
 
+
         <section class="popup-section">
-            <div class="popup-section__login"></div>
-            <div class="popup-section__auth"></div>
+            <div class="popup-section__login">
+                <h4 class="popup-section_title">Вход</h4>
+                
+                <p class="popup-section__input-title popup-section__input-title_hidden">Email</p>
+                <input type="text" placeholder="введите почту" class="popup-section__input">
+                <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
+
+                <p class="popup-section__input-title popup-section__input-title_hidden">Пароль</p>
+                <input type="text" placeholder="введите пароль" class="popup-section__input">
+                <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
+
+                <p class="popup-section__general-err popup-section__general-err_hidden">Ля-ля-ля я ошибка</p>
+                <button class="button popup-section__button">Войти</button>
+                <p class="popup-section__sentence">или <a href="/" class="popup-section__link-auth">Зарегистрироваться</a></p>
+            </div>
+
+            <div class="popup-section__auth popup-section__auth_hidden">
+                <h4 class="popup-section_title">Регистрация</h4>
+                
+                <p class="popup-section__input-title popup-section__input-title_hidden">Email</p>
+                <input type="text" placeholder="введите почту" class="popup-section__input">
+                <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
+
+                <p class="popup-section__input-title popup-section__input-title_hidden">Пароль</p>
+                <input type="text" placeholder="введите пароль" class="popup-section__input">
+                <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
+
+                <p class="popup-section__input-title popup-section__input-title_hidden">Имя</p>
+                <input type="text" placeholder="введите имя" class="popup-section__input">
+                <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
+
+                <p class="popup-section__general-err popup-section__general-err_hidden">Ля-ля-ля я ошибка</p>
+                <button class="button popup-section__button">Зарегистрироваться</button>
+                <p class="popup-section__sentence">или <a href="/" class="popup-section__link-auth">Войти</a></p>
+            </div>
         </section>
 
 
@@ -85,14 +124,16 @@
 
             <nav class="footer-section__navigation">
                 <a href="/" class="link standart-text standart-text_black footer-section__link-main-page">Главная</a>
-                <a href="https://meduza.io/feature/2016/06/01/kto-kruche-yandeks-ili-google"
-                target="_blank" class="link standart-text standart-text_black footer-section__link-google">
+                <a href="https://meduza.io/feature/2016/06/01/kto-kruche-yandeks-ili-google" target="_blank"
+                    class="link standart-text standart-text_black footer-section__link-google">
                     <i class="fa fa-google"></i>
                 </a>
-                <a href="https://github.com/" target="_blank" class="link standart-text standart-text_black footer-section__link-gh">
+                <a href="https://github.com/" target="_blank"
+                    class="link standart-text standart-text_black footer-section__link-gh">
                     <i class="fa fa-github"></i>
                 </a>
-                <a href="https://vk.com/sekizo" target="_blank" class="link standart-text standart-text_black footer-section__link-fb">
+                <a href="https://vk.com/sekizo" target="_blank"
+                    class="link standart-text standart-text_black footer-section__link-fb">
                     <i class="fa fa-vk"></i>
                 </a>
             </nav>

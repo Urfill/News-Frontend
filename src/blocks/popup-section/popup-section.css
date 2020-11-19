@@ -1,5 +1,13 @@
 @import url('./__auth/popup-section__auth.css');
+@import url('./__err/popup-section__err.css');
+@import url('./__general-err/popup-section__general-err.css');
+@import url('./__input-title/popup-section__input-title.css');
+@import url('./__input/popup-section__input.css');
+@import url('./__link-auth/popup-section__link-auth.css');
 @import url('./__login/popup-section__login.css');
+@import url('./__sentence/popup-section__sentence.css');
+@import url('./__title/popup-section__title.css');
+@import url('./_hidden/popup-section_hidden.css');
 
 .popup-section {
     
