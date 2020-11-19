@@ -18,3 +18,4 @@
 // npm i cssnano --save-dev
 // npm install gh-pages --save-dev
 // npm install --save-dev optimize-css-assets-webpack-plugin
+// npm install --save-dev favicons-webpack-plugin
