@@ -1,3 +1,19 @@
 .popup-section__input {
-    
+    width: 358px;
+    height: 24px;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.popup-section__input::placeholder {
+    color: rgba(0,0,0,.2);
+    font-family: "Inner", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.popup-section__input:focus {
+    border-color: #ade63c;
+    outline: none;
 }

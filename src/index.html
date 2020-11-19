@@ -80,42 +80,71 @@
         </section>
 
 
-        <section class="popup-section">
-            <div class="popup-section__login">
-                <h4 class="popup-section_title">Вход</h4>
-                
-                <p class="popup-section__input-title popup-section__input-title_hidden">Email</p>
-                <input type="text" placeholder="введите почту" class="popup-section__input">
-                <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
+        <section class="popup-section popup-section_hidden">
 
-                <p class="popup-section__input-title popup-section__input-title_hidden">Пароль</p>
-                <input type="text" placeholder="введите пароль" class="popup-section__input">
-                <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
+            <div class="popup-section__login popup-section__login_hidden">
+                <img src="<%=require('./images/close.svg')%>" class="popup-section__close">
+                <h4 class="popup-section__title">Вход</h4>
 
-                <p class="popup-section__general-err popup-section__general-err_hidden">Ля-ля-ля я ошибка</p>
-                <button class="button popup-section__button">Войти</button>
-                <p class="popup-section__sentence">или <a href="/" class="popup-section__link-auth">Зарегистрироваться</a></p>
+                <div class="popup-section__form">
+                    <div class="popup-section__field">
+                        <p class="popup-section__input-title">Email</p>
+                        <input type="text" placeholder="введите почту" class="popup-section__input">
+                        <p class="popup-section__err">Ля-ля-ля я ошибка</p>
+                    </div>
+
+                    <div class="popup-section__field">
+                        <p class="popup-section__input-title">Пароль</p>
+                        <input type="text" placeholder="введите пароль" class="popup-section__input">
+                        <p class="popup-section__err">Ля-ля-ля я ошибка</p>
+                    </div>
+
+                    <p class="popup-section__general-err">Ля-ля-ля я ошибка</p>
+                    <button class="button popup-section__button">Войти</button>
+                </div>
+
+                <p class="popup-section__sentence">или <a href="/"
+                        class="popup-section__link-auth">Зарегистрироваться</a></p>
             </div>
+
 
             <div class="popup-section__auth popup-section__auth_hidden">
-                <h4 class="popup-section_title">Регистрация</h4>
-                
-                <p class="popup-section__input-title popup-section__input-title_hidden">Email</p>
-                <input type="text" placeholder="введите почту" class="popup-section__input">
-                <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
+                <img src="<%=require('./images/close.svg')%>" class="popup-section__close">
+                <h4 class="popup-section__title">Регистрация</h4>
 
-                <p class="popup-section__input-title popup-section__input-title_hidden">Пароль</p>
-                <input type="text" placeholder="введите пароль" class="popup-section__input">
-                <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
+                <div class="popup-section__form">
+                    <div class="popup-section__field">
+                        <p class="popup-section__input-title">Email</p>
+                        <input type="text" placeholder="введите почту" class="popup-section__input">
+                        <p class="popup-section__err">Ля-ля-ля я ошибка</p>
+                    </div>
 
-                <p class="popup-section__input-title popup-section__input-title_hidden">Имя</p>
-                <input type="text" placeholder="введите имя" class="popup-section__input">
-                <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
+                    <div class="popup-section__field">
+                        <p class="popup-section__input-title">Пароль</p>
+                        <input type="text" placeholder="введите пароль" class="popup-section__input">
+                        <p class="popup-section__err">Ля-ля-ля я ошибка</p>
+                    </div>
 
-                <p class="popup-section__general-err popup-section__general-err_hidden">Ля-ля-ля я ошибка</p>
-                <button class="button popup-section__button">Зарегистрироваться</button>
+                    <div class="popup-section__field">
+                        <p class="popup-section__input-title">Имя</p>
+                        <input type="text" placeholder="введите имя" class="popup-section__input">
+                        <p class="popup-section__err">Ля-ля-ля я ошибка</p>
+                    </div>
+
+
+                    <p class="popup-section__general-err">Ля-ля-ля я ошибка</p>
+                    <button class="button popup-section__button">Зарегистрироваться</button>
+                </div>
+
                 <p class="popup-section__sentence">или <a href="/" class="popup-section__link-auth">Войти</a></p>
             </div>
+
+            <div class="popup-section__alert popup-section__alert_hidden">
+                <img src="<%=require('./images/close.svg')%>" class="popup-section__close">
+                <p class="popup-section__message">Пользователь успешно зарегистрирован!</p>
+                <a href="/" class="popup-section__link-auth">Войти</a>
+            </div>
+
         </section>
 
 
@@ -128,7 +157,7 @@
                     class="link standart-text standart-text_black footer-section__link-google">
                     <i class="fa fa-google"></i>
                 </a>
-                <a href="https://github.com/" target="_blank"
+                <a href="https://github.com/Se-ki-zo" target="_blank"
                     class="link standart-text standart-text_black footer-section__link-gh">
                     <i class="fa fa-github"></i>
                 </a>

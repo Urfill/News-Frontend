@@ -3,4 +3,11 @@
 .link {
     cursor: pointer;
     margin: 0 16px 0 16px;
+    text-decoration: none;
+}
+
+.link:hover {
+    border-color: #ade63c;
+    color: #ade63c;
+    transition: 1s;
 }

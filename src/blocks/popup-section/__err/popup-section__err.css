@@ -1,5 +1,11 @@
 @import url('./_hidden/popup-section__err_hidden.css');
 
 .popup-section__err {
-    
+    position: absolute;
+    margin: 0px;
+    color: red;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
 }

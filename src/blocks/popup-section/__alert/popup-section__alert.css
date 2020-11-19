@@ -1,6 +1,6 @@
-@import url('./_hidden/popup-section__login_hidden.css');
+@import url('./_hidden/popup-section__alert_hidden.css');
 
-.popup-section__login {
+.popup-section__alert {
     display: flex;
     position: relative;
     flex-direction: column;

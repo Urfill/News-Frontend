@@ -10,4 +10,9 @@
 .search-section__search-input::placeholder {
     color: gray;
     font-size: 16px;
-  }
+}
+
+.search-section__search-input:focus {
+    outline: none;
+    border: 2px solid #ade63c;
+}
