@@ -1,0 +1,11 @@
+@import url('./__about/author-section__about.css');
+@import url('./__author-about/author-section__author-about.css');
+@import url('./__photo/author-section__photo.css');
+@import url('./__title/author-section__title.css');
+
+
+.author-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}

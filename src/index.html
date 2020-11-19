@@ -53,21 +53,53 @@
                     </div>
                 </div>
             </div>
+
         </section>
 
 
-        <section class="body-section">
-            <img class="body-section__photo" src="<%=require('./images/author-photo.jpg')%>" alt="author-photo"></img>
+        <section class="search-result">
 
-            <div class="body-section__about">
-                <h2 class="body-section__title">Об авторе</h2>
-                <p class="standart-text standart-text_black body-section__author-about">Lorem ipsum dolor sit amet,
+            <div class="search-result__card-container">
+                <div class="search-result__card">
+                    <div class="search-result__card-image-container">
+                        <img src="" alt="" class="search-result__card-image">
+                        <img src="" alt="" class="search-result__mark">
+                        <div class="search-result__mark-alert-container">
+                            <p class="search-result__mark-alert search-result__mark-alert_hidden">Войдите, чтобы
+                                сохранять статьи</p>
+                        </div>
+                    </div>
+
+                    <div class="search-result__card-info-container">
+                        <p class="search-result__date">2 августа, 2019</p>
+                        <p class="search-result__title">Национальное достояние – парки</p>
+                        <p class="search-result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                            начала складываться система национальных парков – охраняемых территорий, где и сегодня
+                            каждый может приобщиться к природе.</p>
+                        <p class="search-result__source">Лента.ру</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-result__show-more-container">
+                <a href="/" class="search-result__show-more-link">Показать еще</a>
+            </div>
+
+        </section>
+
+
+        <section class="author-section">
+            <img class="author-section__photo" src="<%=require('./images/author-photo.jpg')%>" alt="author-photo"></img>
+
+            <div class="author-section__about">
+                <h2 class="author-section__title">Об авторе</h2>
+                <p class="standart-text standart-text_black author-section__author-about">Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                     nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                     mollit anim id est laborum</p>
-                <p class="standart-text standart-text_black body-section__author-about">Sed ut perspiciatis unde omnis
+                <p class="standart-text standart-text_black author-section__author-about">Sed ut perspiciatis unde omnis
                     iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                     quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
                     ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
