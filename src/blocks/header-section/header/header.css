@@ -3,6 +3,8 @@
 @import url('./__link-auth/header__link-auth.css');
 @import url('./__link-logo/header__link-logo.css');
 @import url('./__link-main-page/header__link-main-page.css');
+@import url('./__link-logout/header__link-logout.css');
+@import url('./__link-saved/header__link-saved.css');
 
 .header {
     display: flex;

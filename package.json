@@ -1,5 +1,5 @@
 {
-  "name": "p.w.11",
+  "name": "News-Frontend",
   "version": "1.0.0",
   "description": "it's a simple project with some abilities to open/remove and even create card with photo to gallery, change name & etc.",
   "main": "./src/scripts/index.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Se-ki-zo/P.W.11.git"
+    "url": "git+https://github.com/Se-ki-zo/News-Frontend"
   },
   "author": "Sekizo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Se-ki-zo/P.W.11/issues"
+    "url": "https://github.com/Se-ki-zo/News-Frontend/issues"
   },
-  "homepage": "https://github.com/Se-ki-zo/P.W.11#readme",
+  "homepage": "https://github.com/Se-ki-zo/News-Frontend#readme",
   "keywords": [],
   "devDependencies": {
     "@babel/cli": "^7.10.5",
