@@ -1,0 +1,6 @@
+.search-result__card-container {
+    width: 1252px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 64px auto 0;
+}

@@ -1,0 +1,16 @@
+.search-result__source {
+    position: absolute;
+    bottom: 0;
+    font-family: "Roboto Slab", "Arial", "Helvetica", "sans-serif";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B6BCBF;
+    cursor: pointer;
+}
+
+.search-result__source:hover {
+    border-color: #2f71e5;
+    color: #2f71e5;
+    transition: 1s;
+}

@@ -1,4 +1,9 @@
 .search-section__search-button {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 18px;
+
     position: absolute;
     right: 0;
     height: 60px;
@@ -8,4 +13,9 @@
     border: 1px;
     border-radius: 100px;
     cursor: pointer;
+}
+
+.search-section__search-button:hover {
+    transition: 0.5s;
+    background-color: #347EFF;
 }

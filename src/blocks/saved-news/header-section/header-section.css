@@ -1,0 +1,9 @@
+@import url('./header/header.css');
+
+
+.header-section {
+    background-image: url('../../../images/main.png');
+    height: 576px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

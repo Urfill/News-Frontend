@@ -8,8 +8,11 @@
 }
 
 .search-section__search-input::placeholder {
-    color: gray;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    font-weight: 400;
     font-size: 16px;
+    color: gray;
 }
 
 .search-section__search-input:focus {

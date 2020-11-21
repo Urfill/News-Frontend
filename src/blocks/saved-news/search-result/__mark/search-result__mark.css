@@ -1,0 +1,25 @@
+.search-result__mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../../images/icons/delete-native.svg');
+    background-repeat: no-repeat;
+    border: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-result__mark:hover {
+    background-image: url('../../../../images/icons/delete-hover.svg');
+    background-repeat: no-repeat;
+    transition: 0.8s;
+}
+
+
+

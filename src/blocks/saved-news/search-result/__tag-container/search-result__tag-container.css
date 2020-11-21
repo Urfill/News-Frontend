@@ -1,0 +1,12 @@
+.search-result__tag-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 40px;
+    top: 24px;
+    right: 290px;
+    border-radius: 8px;
+    background-color: #fff;
+}

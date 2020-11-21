@@ -1,0 +1,10 @@
+.header__navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 88px;
+    height: -webkit-fill-available;
+    font-size: 18px;
+    /* width: 300px; */
+    /* border: 1px solid red; */
+}

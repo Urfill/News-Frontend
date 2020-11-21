@@ -67,7 +67,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name]/[name].[contenthash].css',
+      filename: '[name]/style.[contenthash].css',
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
@@ -81,13 +81,13 @@ module.exports = {
       template: './src/pages/saved-news.html',
       inject: true,
       chunks: ['savedNews'],
-      filename: 'savedNews/saved-news.html',
+      filename: 'saved-news.html',
     }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       inject: true,
       chunks: ['main'],
-      filename: 'main/index.html',
+      filename: 'index.html',
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

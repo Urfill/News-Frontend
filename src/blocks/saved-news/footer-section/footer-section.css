@@ -1,0 +1,14 @@
+@import url('./__copyrights/footer-section__copyrights.css');
+@import url('./__navigation/footer-section__navigation.css');
+@import url('./__link-main-page/footer-section__link-main-page.css');
+@import url('./__link-google/footer-section__link-google.css');
+@import url('./__link-fb/footer-section__link-fb.css');
+@import url('./__link-gh/footer-section__link-gh.css');
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: #f5f6f7;
+}
