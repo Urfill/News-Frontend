@@ -2,22 +2,23 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+// const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 
-const ghpages = require('gh-pages');
+// const ghpages = require('gh-pages');
 
 module.exports = {
   entry: {
     main: './src/script/index.js',
+    savedNews: './src/script/saved-news.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js',
+    filename: '[name]/[name].[chunkhash].js',
   },
   module: {
     rules: [{
@@ -66,7 +67,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.[contenthash].css',
+      filename: '[name]/[name].[contenthash].css',
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
@@ -77,9 +78,16 @@ module.exports = {
       canPrint: true,
     }),
     new HtmlWebpackPlugin({
+      template: './src/pages/saved-news.html',
       inject: true,
+      chunks: ['savedNews'],
+      filename: 'savedNews/saved-news.html',
+    }),
+    new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: 'index.html',
+      inject: true,
+      chunks: ['main'],
+      filename: 'main/index.html',
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

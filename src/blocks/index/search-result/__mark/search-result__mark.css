@@ -1,5 +1,5 @@
 .search-result__mark {
-    background-image: url('../../../images/icons/mark-native.svg');
+    background-image: url('../../../../images/icons/mark-native.svg');
     background-repeat: no-repeat;
     border: none;
     width: 40px;
@@ -14,12 +14,12 @@
 
 /*  */
 .search-result__mark:focus { 
-    background-image: url('../../../images/icons/mark-marked.svg');
+    background-image: url('../../../../images/icons/mark-marked.svg');
     background-repeat: no-repeat;
 }
 
 .search-result__mark:hover {
-    background-image: url('../../../images/icons/mark-hover.svg');
+    background-image: url('../../../../images/icons/mark-hover.svg');
     background-repeat: no-repeat;
     transition: 0.8s;
 }

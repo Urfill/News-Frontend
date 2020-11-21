@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Sekizo">
     <link rel="shortcut icon" href="<%=require('./images/favicon/favicon.png')%>" type="image/x-icon">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
+
     <meta name="description" content="News Explorer - поиск, это просто!">
     <title>News > Explorer</title>
 </head>
@@ -17,11 +19,11 @@
         <section class="header-section">
             <header class="header">
                 <a href="/" class="header__link-logo">
-                    <img src="<%=require('./images/logo.svg')%>" alt="NewsExplorer" class="header__logo">
+                    <img src="<%=require('./images/logo.png')%>" alt="NewsExplorer" class="header__logo">
                 </a>
 
                 <nav class="header__navigation">
-                    <a href="/" class="standart-text standart-text_white link header__link-main-page">Главная</a>
+                    <a href="/saved-news.html" class="standart-text standart-text_white link header__link-main-page">Главная</a>
                     <a href="/" class="standart-text standart-text_white link header__link-auth">Авторизоваться</a>
                     <a href="#"
                         class="standart-text standart-text_white link link_hidden header__link-saved">Сохраненные
@@ -169,7 +171,7 @@
         </section>
 
 
-        <section class="popup-section">
+        <section class="popup-section popup-section_hidden">
 
             <div class="popup-section__login popup-section__login_hidden">
                 <img src="<%=require('./images/close.svg')%>" class="popup-section__close">
@@ -228,7 +230,7 @@
                 <p class="popup-section__sentence">или <a href="/" class="popup-section__link-auth">Войти</a></p>
             </div>
 
-            <div class="popup-section__alert ">
+            <div class="popup-section__alert popup-section__alert_hidden">
                 <img src="<%=require('./images/close.svg')%>" class="popup-section__close">
                 <p class="popup-section__message">Пользователь успешно зарегистрирован!</p>
                 <a href="/" class="popup-section__link-auth">Войти</a>
@@ -257,6 +259,7 @@
             </nav>
         </footer>
     </div>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 
 </html>

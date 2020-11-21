@@ -1,0 +1,5 @@
+.header__link-main-page {
+    display: flex;
+    align-items: center;
+    height: -webkit-fill-available;    
+}

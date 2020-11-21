@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Sekizo">
+    <link rel="shortcut icon" href="<%=require('./../images/favicon/favicon.png')%>" type="image/x-icon">
+    
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
+    <meta name="description" content="News Explorer - поиск, это просто!">
+    <title>Сохраненные статьи</title>
+</head>
+
+<body>
+    <div class="page">
+
+            <header class="header">
+                <a href="/" class="header__link-logo">
+                    <img src="<%=require('./../images/logo.png')%>" alt="NewsExplorer" class="header__logo">
+                </a>
+
+                <nav class="header__navigation">
+                    <a href="/index.html" class="standart-text standart-text_white link header__link-main-page">Главная</a>
+                    <a href="/" class="standart-text standart-text_white link link_hidden header__link-auth">Авторизоваться</a>
+                    <a href="#"
+                        class="standart-text standart-text_white link header__link-saved">Сохраненные
+                        статьи</a>
+                    <a href="#"
+                        class="standart-text standart-text_white link header__link-logout">User&nbsp;&nbsp;<i
+                            class="fa fa-sign-out" aria-hidden="true"></i></a>
+                </nav>
+            </header>
+
+
+        <section class="search-result">
+
+            <div class="search-result__container">
+
+                <div class="search-result__card-container">
+
+                    <div class="search-result__card">
+                        <div class="search-result__card-image-container">
+                            <div class="search-result__mark-alert-container search-result__mark-alert-container_hidden">
+                                <p class="search-result__mark-alert search-result__mark-alert_hidden">Войдите, чтобы
+                                    сохранять статьи</p>
+                            </div>
+
+                                <button class="search-result__mark"></button>
+
+                            <img src="<%=require('./../images/card1.jpg')%>" alt="search-result__card-image"
+                                class="search-result__card-image">
+
+                        </div>
+
+                        <div class="search-result__card-info-container">
+                            <p class="search-result__date">2 августа, 2019</p>
+                            <p class="search-result__card-title">Национальное достояние – парки</p>
+                            <p class="search-result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад
+                                здесь
+                                начала складываться система национальных парков – охраняемых территорий, где и сегодня
+                                каждый может приобщиться к природе.</p>
+                            <p class="search-result__source">ЛЕНТА.РУ</p>
+                        </div>
+                    </div> 
+
+                    <div class="search-result__card">
+                        <div class="search-result__card-image-container">
+                            <div class="search-result__mark-alert-container search-result__mark-alert-container_hidden">
+                                <p class="search-result__mark-alert search-result__mark-alert_hidden">Войдите, чтобы
+                                    сохранять статьи</p>
+                            </div>
+
+                                <button class="search-result__mark"></button>
+
+                            <img src="<%=require('./../images/card2.jpg')%>" alt="search-result__card-image"
+                                class="search-result__card-image">
+
+                        </div>
+
+                        <div class="search-result__card-info-container">
+                            <p class="search-result__date">2 августа, 2019</p>
+                            <p class="search-result__card-title">Лесные огоньки: история одной фотографии</p>
+                            <p class="search-result__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного 
+                                из местных чудес природы.</p>
+                            <p class="search-result__source">МЕДУЗА</p>
+                        </div>
+                    </div> 
+
+                    <div class="search-result__card">
+                        <div class="search-result__card-image-container">
+                            <div class="search-result__mark-alert-container search-result__mark-alert-container_hidden">
+                                <p class="search-result__mark-alert search-result__mark-alert_hidden">Войдите, чтобы
+                                    сохранять статьи</p>
+                            </div>
+
+                                <button class="search-result__mark"></button>
+
+                            <img src="<%=require('./../images/card3.jpg')%>" alt="search-result__card-image"
+                                class="search-result__card-image">
+
+                        </div>
+
+                        <div class="search-result__card-info-container">
+                            <p class="search-result__date">2 августа, 2019</p>
+                            <p class="search-result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</p>
+                            <p class="search-result__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                            <p class="search-result__source">РИА</p>
+                        </div>
+                    </div> 
+
+                    <div class="search-result__card">
+                        <div class="search-result__card-image-container">
+                            <div class="search-result__mark-alert-container search-result__mark-alert-container_hidden">
+                                <p class="search-result__mark-alert search-result__mark-alert_hidden">Войдите, чтобы
+                                    сохранять статьи</p>
+                            </div>
+
+                                <button class="search-result__mark"></button>
+
+                            <img src="<%=require('./../images/card3.jpg')%>" alt="search-result__card-image"
+                                class="search-result__card-image">
+
+                        </div>
+
+                        <div class="search-result__card-info-container">
+                            <p class="search-result__date">2 августа, 2019</p>
+                            <p class="search-result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</p>
+                            <p class="search-result__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                            <p class="search-result__source">РИА</p>
+                        </div>
+                    </div> 
+
+                    <div class="search-result__card">
+                        <div class="search-result__card-image-container">
+                            <div class="search-result__mark-alert-container search-result__mark-alert-container_hidden">
+                                <p class="search-result__mark-alert search-result__mark-alert_hidden">Войдите, чтобы
+                                    сохранять статьи</p>
+                            </div>
+
+                                <button class="search-result__mark"></button>
+
+                            <img src="<%=require('./../images/card3.jpg')%>" alt="search-result__card-image"
+                                class="search-result__card-image">
+
+                        </div>
+
+                        <div class="search-result__card-info-container">
+                            <p class="search-result__date">2 августа, 2019</p>
+                            <p class="search-result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</p>
+                            <p class="search-result__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                            <p class="search-result__source">РИА</p>
+                        </div>
+                    </div> 
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <footer class="footer-section">
+            <p class="standart-text footer-section__copyrights">© 2020 Supersite, Powered by News API</p>
+
+            <nav class="footer-section__navigation">
+                <a href="/" class="link standart-text standart-text_black footer-section__link-main-page">Главная</a>
+                <a href="https://meduza.io/feature/2016/06/01/kto-kruche-yandeks-ili-google" target="_blank"
+                    class="link standart-text standart-text_black footer-section__link-google">
+                    <i class="fa fa-google"></i>
+                </a>
+                <a href="https://github.com/Se-ki-zo" target="_blank"
+                    class="link standart-text standart-text_black footer-section__link-gh">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="https://vk.com/sekizo" target="_blank"
+                    class="link standart-text standart-text_black footer-section__link-fb">
+                    <i class="fa fa-vk"></i>
+                </a>
+            </nav>
+        </footer>
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+
+</html>
