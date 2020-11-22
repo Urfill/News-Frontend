@@ -1,12 +1,12 @@
 # Sekizo's News-Frontend
-it's a simple project with some abilities to open/remove and even create card with photo to gallery, change name & etc.
+it's a simple project with some abilities to search news.
 
 ## Tech
 In this project, we used html/css/js/webp, to create this website and try to upgrade skills.
 
 ## ver 0.0.1
 We added some new functional in project:
-1. Now u can use GH-P to open website remotely.
+1. Now you can use webpack with 2 or more pages!
 
 ## How to use?
 So, it's time to talk about "How 2 use this crap?".
