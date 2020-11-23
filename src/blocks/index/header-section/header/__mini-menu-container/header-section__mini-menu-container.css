@@ -1,0 +1,9 @@
+.header-section__mini-menu-container {
+    
+}
+
+@media screen and (min-width: 480px) {
+    div.header-section__mini-menu-container {
+        display: none;
+    }
+}

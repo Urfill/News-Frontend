@@ -1,7 +1,4 @@
 .search-result__mark {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-image: url('../../../../images/icons/delete-native.svg');
     background-repeat: no-repeat;
     border: none;
@@ -13,6 +10,12 @@
     border-radius: 8px;
     cursor: pointer;
     outline: none;
+}
+
+/*  */
+.search-result__mark:focus { 
+    background-image: url('../../../../images/icons/delete-native.svg');
+    background-repeat: no-repeat;
 }
 
 .search-result__mark:hover {

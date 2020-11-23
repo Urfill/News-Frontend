@@ -15,6 +15,14 @@
 @import url('./__alert/popup-section__alert.css');
 @import url('./__message/popup-section__message.css');
 
+@import url('./__mini-menu-close/popup-section__mini-menu-close.css');
+@import url('./__mini-menu-logo-container/popup-section__mini-menu-logo-container.css');
+@import url('./__mini-menu-logo/popup-section__mini-menu-logo.css');
+@import url('./__mini-menu-navigation/popup-section__mini-menu-navigation.css');
+@import url('./__mini-menu-open/popup-section__mini-menu-open.css');
+@import url('./__mini-menu-popup-header/popup-section__mini-menu-popup-header.css');
+@import url('./__mini-menu-popup/popup-section__mini-menu-popup.css');
+
 .popup-section {
     display: flex;
     align-items: center;

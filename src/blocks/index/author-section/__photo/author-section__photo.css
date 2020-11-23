@@ -7,3 +7,15 @@
     object-fit: none;
     /* object-fit: contain; */
 }
+
+@media screen and (min-width: 320px) and (max-device-width: 480px) {
+    .author-section__photo {
+        align-self: center;
+        width: 272px;
+        height: 272px;
+        margin: 0px;
+        border-radius: 100%;
+        border: 1px solid #000;
+        object-fit: revert;
+    }
+}

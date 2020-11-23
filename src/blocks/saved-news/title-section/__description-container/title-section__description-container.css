@@ -3,3 +3,11 @@
     margin-top: 30px;
     margin-bottom: 56px;
 }
+
+@media screen and (min-width: 320px) and (max-device-width: 480px) {
+    .title-section__description-container {
+        flex-wrap: wrap;
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+}

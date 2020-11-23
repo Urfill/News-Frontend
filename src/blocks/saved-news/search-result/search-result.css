@@ -16,10 +16,16 @@
 @import url('./__card-image/search-result__card-image.css');
 @import url('./__mark-container/search-result__mark-container.css');
 @import url('./_hidden/search-result_hidden.css');
-@import url('./__tag-container/search-result__tag-container.css');
 @import url('./__tag/search-result__tag.css');
+@import url('./__tag-container/search-result__tag-container.css');
 
 .search-result {
-    background-color: #fbfbfb;
+    background-color: #F5F6F7;
     /* height: 974px; */
+}
+
+@media screen and (min-width: 320px) and (max-device-width: 480px) {
+    .search-result {
+        background-color: unset;
+    }
 }

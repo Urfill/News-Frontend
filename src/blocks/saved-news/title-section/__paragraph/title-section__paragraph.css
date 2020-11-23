@@ -6,3 +6,11 @@
     color: #8d8d91;
     margin-top: 40px;
 }
+
+@media screen and (min-width: 320px) and (max-device-width: 480px) {
+    .title-section__paragraph {
+        font-size: 12px;
+        margin-top: 8px;
+        width: 100%;
+    }
+}

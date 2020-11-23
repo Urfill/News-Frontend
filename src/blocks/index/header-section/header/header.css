@@ -6,6 +6,10 @@
 @import url('./__link-logout/header__link-logout.css');
 @import url('./__link-saved/header__link-saved.css');
 
+@import url('./__mini-menu-container/header-section__mini-menu-container.css');
+
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -13,4 +17,17 @@
     height: 80px;
     border-bottom: 1px solid;
     border-color: #ffffff7a;
+}
+
+@media screen and (min-width: 320px) and (max-device-width: 480px){
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* width: 100%; */
+        height: 56px;
+        border-bottom: 1px solid;
+        border-color: hsla(0,0%,100%,.48);
+        padding: 0 5%;
+    }
 }

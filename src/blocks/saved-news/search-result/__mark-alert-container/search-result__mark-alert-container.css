@@ -5,10 +5,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 159px;
+    text-align: center;
+    width: 182px;
     height: 40px;
     top: 24px;
     right: 69px;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: #ffffff;
 }

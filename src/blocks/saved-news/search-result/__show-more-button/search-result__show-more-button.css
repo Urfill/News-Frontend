@@ -12,3 +12,19 @@
     height: 64px;
     outline: none;
 }
+
+@media screen and (min-width: 320px) and (max-device-width: 480px) {
+    .search-result__show-more-button {
+        font-family: "Roboto", Arial, Helvetica, "sans-serif";
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #1a1b22;
+        background: #fff;
+        border: 1px solid #e4e4e4;
+        border-radius: 80px;
+        width: 288px;
+        height: 64px;
+        outline: none;
+    }
+}

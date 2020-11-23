@@ -7,3 +7,9 @@
     /* height: 294px; */
     padding-left: 104px;
 }
+
+@media screen and (min-width: 320px) and (max-device-width: 480px) {
+    .title-section {
+        padding: 0 5%;
+    }
+}
