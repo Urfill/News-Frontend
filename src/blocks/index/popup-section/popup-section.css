@@ -16,6 +16,7 @@
 @import url('./__message/popup-section__message.css');
 @import url('./__link-main-page/popup-section__link-main-page.css');
 @import url('./__link-saved/popup-section__link-saved.css');
+@import url('./__link-auth-button/popup-section__link-auth-button.css');
 
 @import url('./__mini-menu-close/popup-section__mini-menu-close.css');
 @import url('./__mini-menu-logo-container/popup-section__mini-menu-logo-container.css');
