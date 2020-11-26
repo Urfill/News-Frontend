@@ -5,12 +5,19 @@
     margin: 64px auto 0;
 }
 
-@media screen and (min-width: 320px) and (max-device-width: 480px) {
+@media screen and (min-width: 320px) and (max-device-width: 767px) {
     .search-result__card-container {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        justify-content: unset;
+        flex-direction: unset;
         align-items: center;
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-device-width: 675px) {
+    .search-result__card-container {
+        justify-content: center;
     }
 }

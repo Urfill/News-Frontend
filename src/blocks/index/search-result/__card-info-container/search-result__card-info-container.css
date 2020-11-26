@@ -2,7 +2,7 @@
     margin-left: 24px;
 }
 
-@media screen and (min-width: 320px) and (max-device-width: 480px) {
+@media screen and (min-width: 320px) and (max-device-width: 767px) {
     .search-result__card-info-container {
         margin-left: 16px;
     }

@@ -20,7 +20,7 @@
     background-color: #347EFF;
 }
 
-@media screen and (min-width: 320px) and (max-device-width: 480px){
+@media screen and (min-width: 320px) and (max-device-width: 767px){
     .search-section__search-button {
         position: unset;
         font-family: "Roboto", Arial, Helvetica, sans-serif;

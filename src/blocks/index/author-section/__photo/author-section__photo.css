@@ -8,7 +8,7 @@
     /* object-fit: contain; */
 }
 
-@media screen and (min-width: 320px) and (max-device-width: 480px) {
+@media screen and (min-width: 320px) and (max-device-width: 767px) {
     .author-section__photo {
         align-self: center;
         width: 272px;

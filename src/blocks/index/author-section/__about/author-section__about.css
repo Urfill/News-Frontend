@@ -3,7 +3,7 @@
     margin-top: 51px;
 }
 
-@media screen and (min-width: 320px) and (max-device-width: 480px) {
+@media screen and (min-width: 320px) and (max-device-width: 767px) {
     .author-section__about {
         width: unset;
         margin-top: 0px;
