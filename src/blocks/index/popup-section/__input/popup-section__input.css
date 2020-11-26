@@ -17,3 +17,9 @@
     border-color: #2f71e5;
     outline: none;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .popup-section__input {
+        width: 100%;
+    }
+}

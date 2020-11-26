@@ -1,3 +1,15 @@
 .popup-section__mini-menu-popup-header {
     
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .popup-section__mini-menu-popup-header {
+        height: 83px;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px 0;
+        border-bottom: 1px solid #7b7b7b;
+    }
+}
