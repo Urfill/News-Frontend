@@ -17,3 +17,12 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width: 768px) and (max-device-width: 1024px) {
+    .search-result__title {
+        width: auto;
+        margin: 0px;
+        font-size: 30px;
+        line-height: 34px;
+    }
+}

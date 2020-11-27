@@ -1,4 +1,4 @@
-.search-result__card-image-container {
+/* .search-result__card-image-container {
     height: 272px;
 }
 
@@ -7,3 +7,9 @@
         height: 196px;
     }
 }
+
+@media screen and (min-width: 768px) and (max-device-width: 1024px){
+    .search-result__card-image-container {
+        height: 150px;
+    }
+} */

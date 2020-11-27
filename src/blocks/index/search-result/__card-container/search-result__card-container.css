@@ -21,3 +21,11 @@
         justify-content: center;
     }
 }
+
+@media screen and (min-width: 768px) and (max-device-width: 1024px){
+    .search-result__card-container {
+        width: auto;
+        flex-wrap: nowrap;
+        margin-top: 32px;
+    }
+}

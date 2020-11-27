@@ -21,3 +21,10 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width: 768px) and (max-device-width: 1024px){
+    .author-section {
+        margin: 0px;
+        padding: 40px;
+    }
+}

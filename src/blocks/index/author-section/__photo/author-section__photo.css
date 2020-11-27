@@ -19,3 +19,12 @@
         object-fit: revert;
     }
 }
+
+@media screen and (min-width: 768px) and (max-device-width: 1024px){
+    .author-section__photo {
+        object-fit: fill;
+        width: 232px;
+        height: 232px;
+        margin: 0 32px 0 0;
+    }
+}
