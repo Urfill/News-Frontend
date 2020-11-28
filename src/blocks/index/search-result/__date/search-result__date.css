@@ -21,7 +21,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-device-width: 1024px){
+@media screen and (min-width: 768px) and (max-device-width: 1023px){
     .search-result__date {
         margin: 0px;
     }

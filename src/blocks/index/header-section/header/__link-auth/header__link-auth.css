@@ -5,7 +5,7 @@
     padding: 12px;
 }
 
-@media screen and (min-width: 768px) and (max-device-width: 1024px){
+@media screen and (min-width: 768px) and (max-device-width: 1023px){
     .header__link-auth {
         width: 152px;
         border: 1px solid #fff;

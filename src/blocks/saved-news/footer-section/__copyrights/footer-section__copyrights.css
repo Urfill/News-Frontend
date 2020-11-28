@@ -14,3 +14,15 @@
         color: #b6bcbf;
     }
 }
+
+@media screen and (min-width: 768px) and (max-device-width: 1023px){
+    .footer-section__copyrights {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-device-width: 1356px) {
+    .footer-section__copyrights {
+        margin-left: 54px;
+    }
+}

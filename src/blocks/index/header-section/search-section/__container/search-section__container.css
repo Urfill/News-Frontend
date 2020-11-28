@@ -8,8 +8,14 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-device-width: 1024px){
+@media screen and (min-width: 768px) and (max-device-width: 1023px){
     .search-section__container {
         width: 59%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-device-width: 1356px) {
+    .search-section__container {
+        width: 55%;
     }
 }

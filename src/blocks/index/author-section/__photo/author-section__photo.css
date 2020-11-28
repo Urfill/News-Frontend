@@ -20,11 +20,20 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-device-width: 1024px){
+@media screen and (min-width: 768px) and (max-device-width: 1023px){
     .author-section__photo {
         object-fit: fill;
         width: 232px;
         height: 232px;
         margin: 0 32px 0 0;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-device-width: 1356px) {
+    .author-section__photo {
+        width: 364px;
+        height: 364px;
+        margin-right: 56px;
+        object-fit: fill;
     }
 }

@@ -18,11 +18,17 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-device-width: 1024px) {
+@media screen and (min-width: 768px) and (max-device-width: 1023px) {
     .search-result__title {
         width: auto;
         margin: 0px;
         font-size: 30px;
         line-height: 34px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-device-width: 1356px) {
+    .search-result__title {
+        width: auto;
     }
 }
