@@ -18,7 +18,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name]/[name].[chunkhash].js',
+    filename: '[name].[chunkhash].js',
   },
   module: {
     rules: [{
@@ -47,7 +47,7 @@ module.exports = {
         loader: 'file-loader',
         options: {
           name: '[name][hash].[ext]',
-          outputPath: 'images',
+          outputPath: '',
           esModule: false,
         },
       }],
@@ -67,7 +67,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name]/style.[contenthash].css',
+      filename: 'style.[contenthash].css',
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,

@@ -15,9 +15,10 @@
     }
 }
 
-@media screen and (min-width: 1024px) and (max-device-width: 1356px) {
+@media screen and (min-width: 768px) and (max-device-width: 1356px) {
     .search-result__card-container {
         width: auto;
+        margin: 0;
     }
 }
 
