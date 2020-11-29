@@ -22,8 +22,8 @@
     /* height: 974px; */
 }
 
-@media screen and (min-width: 320px) and (max-device-width: 767px) {
+/* @media screen and (min-width: 320px) and (max-device-width: 767px) {
     .search-result {
         background-color: unset;
     }
-}
+} */

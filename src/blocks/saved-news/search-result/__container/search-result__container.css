@@ -8,7 +8,7 @@
     .search-result__container {
         display: flex;
         flex-direction: column;
-        padding: 0 5%;
+        padding: 5% 5%;
     }
 }
 
