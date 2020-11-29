@@ -13,3 +13,9 @@
         padding: 0 5%;
     }
 }
+
+@media screen and (min-width: 768px) and (max-device-width: 1356px) {
+    .title-section {
+        padding-left: 40px;
+    }
+}
