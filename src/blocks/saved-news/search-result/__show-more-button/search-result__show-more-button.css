@@ -13,7 +13,7 @@
     outline: none;
 }
 
-@media screen and (min-width: 320px) and (max-device-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     .search-result__show-more-button {
         font-family: "Roboto", Arial, Helvetica, "sans-serif";
         font-weight: 500;

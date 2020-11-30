@@ -3,7 +3,7 @@
     align-self: center;
 }
 
-@media screen and (min-width: 320px) and (max-device-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     .footer-section__navigation {
         display: flex;
         width: -webkit-fill-available;
@@ -13,13 +13,13 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-device-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
     .footer-section__navigation {
         margin-right: 40px;
     }
 }
 
-@media screen and (min-width: 1024px) and (max-device-width: 1356px) {
+@media screen and (min-width: 1024px) and (max-width: 1356px) {
     .footer-section__navigation {
         margin-right: 54px;
     }
