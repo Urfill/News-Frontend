@@ -18,7 +18,7 @@
         <!-- ПРИМЕЧАНИЕ: для перехода на вторую стр. тыкни на лого -->
         <!-- ПРИМЕЧАНИЕ: для открытия/скрытия блоков добавить/убрать класс - [class-name]_hidden -->
         <section class="header-section">
-            <header class="header">            
+            <header class="header">
                 <a href="/saved-news.html" class="header__link-logo">
                     <img src="<%=require('./images/logo.png')%>" alt="NewsExplorer" class="header__logo">
                 </a>
@@ -39,7 +39,7 @@
                     <a href="/index.html"
                         class="standart-text standart-text_white link link_hidden header__link-logout">Выход&nbsp;&nbsp;<i
                             class="fa fa-sign-out" aria-hidden="true"></i></a>
-                </nav> 
+                </nav>
             </header>
 
 
@@ -53,7 +53,8 @@
                         личном кабинете.</p>
 
                     <div class="search-section__search-field">
-                        <input class="search-section__search-input" type="text" placeholder="Введите тему новости">
+                        <input class="search-section__search-input" type="text" placeholder="Введите тему новости"
+                            autocomplete="off" maxlength="30" minlength="2" required type="text">
                         <button class="button search-section__search-button">Искать</button>
                     </div>
 
@@ -69,7 +70,7 @@
         <section class="search-result">
 
             <div class="search-result__container">
-                <p class="search-result__title">Результаты поиска</p>
+                <h3 class="search-result__title">Результаты поиска</h3>
 
                 <div class="search-result__card-container">
 
@@ -163,22 +164,13 @@
 
             <div class="author-section__about">
                 <h2 class="author-section__title">Об авторе</h2>
-                <p class="standart-text standart-text_black author-section__author-about">Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum</p>
-                <p class="standart-text standart-text_black author-section__author-about">Sed ut perspiciatis unde omnis
-                    iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                    quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-                    ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                    dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                    dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-                    labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
-                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
-                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <p class="standart-text standart-text_black author-section__author-about">Это блок с описанием автора
+                    проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки
+                    владеете.
+                </p>
+                <p class="standart-text standart-text_black author-section__author-about">Также можно рассказать о
+                    процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.
+                </p>
             </div>
         </section>
 
@@ -188,8 +180,9 @@
             <div class="popup-section__mini-menu-popup popup-section__mini-menu-popup_hidden">
                 <div class="popup-section__mini-menu-popup-header">
                     <a href="/saved-news.html" class="popup-section__mini-menu-logo-container">
-                        <img src="<%=require('./images/logo.png')%>" alt="NewsExplorer" class="popup-section__mini-menu-logo">
-                    </a> 
+                        <img src="<%=require('./images/logo.png')%>" alt="NewsExplorer"
+                            class="popup-section__mini-menu-logo">
+                    </a>
 
                     <img src="<%=require('./images/icons/mini-menu-close-native.svg')%>" alt="menu"
                         class="popup-section__mini-menu-close">

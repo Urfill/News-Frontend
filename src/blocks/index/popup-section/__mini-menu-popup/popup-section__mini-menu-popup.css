@@ -1,7 +1,7 @@
 @import url('./_hidden/popup-section__mini-menu-popup_hidden.css');
 
 .popup-section__mini-menu-popup {
-    
+    display: none;
 }
 
 
