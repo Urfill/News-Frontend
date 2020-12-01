@@ -1,0 +1,14 @@
+@import url('./_hidden/search-result__show-more-container_hidden.css');
+
+.search-result__show-more-container {
+    align-self: center;
+    margin-top: 64px;
+    /* margin-bottom: 80px; */
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .search-result__show-more-container {
+        align-self: center;
+        margin: 16px 0 32px 0;
+    }
+}

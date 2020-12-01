@@ -1,0 +1,21 @@
+.header__link-logo {
+    margin-left: 104px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .header__link-logo {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .header__link-logo {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1356px) {
+    .header__link-logo {
+        margin-left: 54px;
+    }
+}
