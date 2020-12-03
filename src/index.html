@@ -31,8 +31,8 @@
                 <nav class="header__navigation">
                     <a href="/index.html"
                         class="standart-text standart-text_white link header__link-main-page">Главная</a>
-                    <a href="/index.html"
-                        class="standart-text standart-text_white link header__link-auth">Авторизоваться</a>
+                    <button
+                        class="button standart-text standart-text_white link header__link-auth">Авторизоваться</button>
                     <a href="/index.html"
                         class="standart-text standart-text_white link link_hidden header__link-saved">Сохраненные
                         статьи</a>
@@ -175,9 +175,9 @@
         </section>
 
 
-        <section class="popup-section popup-section_hidden">
+        <section class="popup_hidden popup-section">
 
-            <div class="popup-section__mini-menu-popup popup-section__mini-menu-popup_hidden">
+            <div class="popup_hidden popup-section__mini-menu-popup">
                 <div class="popup-section__mini-menu-popup-header">
                     <a href="/saved-news.html" class="popup-section__mini-menu-logo-container">
                         <img src="<%=require('./images/logo.png')%>" alt="NewsExplorer"
@@ -199,7 +199,7 @@
                 </nav>
             </div>
 
-            <div class="popup-section__login popup-section__login_hidden">
+            <div class="popup_hidden popup-section__login">
                 <img src="<%=require('./images/close.svg')%>" alt="close" class="popup-section__close">
                 <h4 class="popup-section__title">Вход</h4>
 
@@ -216,16 +216,18 @@
                         <p class="popup-section__err">Ля-ля-ля я ошибка</p>
                     </div>
 
-                    <p class="popup-section__general-err">Ля-ля-ля я ошибка</p>
-                    <button class="button popup-section__button">Войти</button>
-                </div>
+                    <div class="popup-section__button-container">
+                        <p class="popup-section__general-err">Ля-ля-ля я ошибка</p>
+                        <button class="button popup-section__button">Войти</button>
+                    </div>
 
-                <p class="popup-section__sentence">или <a href="/"
-                        class="popup-section__link-auth">Зарегистрироваться</a></p>
+                    <p class="popup-section__sentence">или <a href="/"
+                            class="popup-section__link-auth">Зарегистрироваться</a></p>
+                </div>
             </div>
 
 
-            <div class="popup-section__auth popup-section__auth_hidden">
+            <div class="popup_hidden popup-section__auth">
                 <img src="<%=require('./images/close.svg')%>" alt="close" class="popup-section__close">
                 <h4 class="popup-section__title">Регистрация</h4>
 
@@ -249,14 +251,16 @@
                     </div>
 
 
-                    <p class="popup-section__general-err">Ля-ля-ля я ошибка</p>
-                    <button class="button popup-section__button">Зарегистрироваться</button>
+                    <div class="popup-section__button-container">
+                        <p class="popup-section__general-err">Ля-ля-ля я ошибка</p>
+                        <button class="button popup-section__button">Зарегистрироваться</button>
+                    </div>
                 </div>
 
                 <p class="popup-section__sentence">или <a href="/" class="popup-section__link-auth">Войти</a></p>
             </div>
 
-            <div class="popup-section__alert popup-section__alert_hidden">
+            <div class="popup_hidden popup-section__alert">
                 <img src="<%=require('./images/close.svg')%>" alt="close" class="popup-section__close">
                 <p class="popup-section__message">Пользователь успешно зарегистрирован!</p>
                 <a href="/" class="popup-section__link-auth">Войти</a>

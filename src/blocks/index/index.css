@@ -1,0 +1,25 @@
+@import url('../../vendor/normalize.css');
+@import url('../../vendor/fonts.css');
+@import url('../../vendor/fa/css/font-awesome.css');
+
+@import url('../../blocks/index/standart-text/standart-text.css');
+@import url('../../blocks/index/link/link.css');
+@import url('../../blocks/index/button/button.css');
+
+@import url('../../blocks/index/header-section/header-section.css');
+@import url('../../blocks/index/search-result/search-result.css');
+@import url('../../blocks/index/author-section/author-section.css');
+@import url('../../blocks/index/popup-section/popup-section.css');
+@import url('../../blocks/index/footer-section/footer-section.css');
+
+@import url('../../blocks/index/popup/popup.css');
+
+.page {
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .page {
+        width: 100%;
+    }
+}
