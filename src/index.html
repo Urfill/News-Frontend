@@ -199,32 +199,6 @@
                 </nav>
             </div>
 
-            <div class="popup_hidden popup-section__login">
-                <img src="<%=require('./images/close.svg')%>" alt="close" class="popup-section__close">
-                <h4 class="popup-section__title">Вход</h4>
-
-                <div class="popup-section__form">
-                    <div class="popup-section__field">
-                        <p class="popup-section__input-title">Email</p>
-                        <input type="text" placeholder="введите почту" class="popup-section__input">
-                        <p class="popup-section__err">Ля-ля-ля я ошибка</p>
-                    </div>
-
-                    <div class="popup-section__field">
-                        <p class="popup-section__input-title">Пароль</p>
-                        <input type="text" placeholder="введите пароль" class="popup-section__input">
-                        <p class="popup-section__err">Ля-ля-ля я ошибка</p>
-                    </div>
-
-                    <div class="popup-section__button-container">
-                        <p class="popup-section__general-err">Ля-ля-ля я ошибка</p>
-                        <button class="button popup-section__button">Войти</button>
-                    </div>
-
-                    <p class="popup-section__sentence">или <a href="/"
-                            class="popup-section__link-auth">Зарегистрироваться</a></p>
-                </div>
-            </div>
 
 
             <div class="popup_hidden popup-section__auth">
@@ -234,36 +208,63 @@
                 <div class="popup-section__form">
                     <div class="popup-section__field">
                         <p class="popup-section__input-title">Email</p>
-                        <input type="text" placeholder="введите почту" class="popup-section__input">
-                        <p class="popup-section__err">Ля-ля-ля я ошибка</p>
+                        <input autocomplete="off" maxlength="30" minlength="2" required type="text" pattern="([a-z0-9]{1,}((-|\.)?[a-z0-9]{1,}))@[a-z0-9]{1,}(-[a-z0-9]{1,})?(\.[a-z]{2,})?(\.[a-z]{2,3})" placeholder="введите почту" class="popup-section__input">
+                        <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
                     </div>
 
                     <div class="popup-section__field">
                         <p class="popup-section__input-title">Пароль</p>
-                        <input type="text" placeholder="введите пароль" class="popup-section__input">
-                        <p class="popup-section__err">Ля-ля-ля я ошибка</p>
+                        <input autocomplete="off" maxlength="30" minlength="2" required type="text" placeholder="введите пароль" class="popup-section__input">
+                        <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
                     </div>
 
                     <div class="popup-section__field">
                         <p class="popup-section__input-title">Имя</p>
-                        <input type="text" placeholder="введите имя" class="popup-section__input">
-                        <p class="popup-section__err">Ля-ля-ля я ошибка</p>
+                        <input autocomplete="off" maxlength="30" minlength="2" required type="text" placeholder="введите имя" class="popup-section__input">
+                        <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
                     </div>
 
 
                     <div class="popup-section__button-container">
-                        <p class="popup-section__general-err">Ля-ля-ля я ошибка</p>
+                        <p class="popup-section__general-err popup-section__general-err_hidden">Ля-ля-ля я ошибка</p>
                         <button class="button popup-section__button">Зарегистрироваться</button>
                     </div>
                 </div>
 
-                <p class="popup-section__sentence">или <a href="/" class="popup-section__link-auth">Войти</a></p>
+                <p class="popup-section__sentence">или <button class="button popup-section__link-auth">Войти</button></p>
+            </div>
+
+            <div class="popup_hidden popup-section__login">
+                <img src="<%=require('./images/close.svg')%>" alt="close" class="popup-section__close">
+                <h4 class="popup-section__title">Вход</h4>
+
+                <div class="popup-section__form">
+                    <div class="popup-section__field">
+                        <p class="popup-section__input-title">Email</p>
+                        <input autocomplete="off" maxlength="30" minlength="2" required type="text" name="email" placeholder="введите почту" class="popup-section__input">
+                        <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
+                    </div>
+
+                    <div class="popup-section__field">
+                        <p class="popup-section__input-title">Пароль</p>
+                        <input autocomplete="off" maxlength="30" minlength="2" required type="text" placeholder="введите пароль" class="popup-section__input">
+                        <p class="popup-section__err popup-section__err_hidden">Ля-ля-ля я ошибка</p>
+                    </div>
+
+                    <div class="popup-section__button-container">
+                        <p class="popup-section__general-err popup-section__general-err_hidden">Ля-ля-ля я ошибка</p>
+                        <button class="button popup-section__button">Войти</button>
+                    </div>
+
+                    <p class="popup-section__sentence">или <button
+                            class="button popup-section__link-auth">Зарегистрироваться</button></p>
+                </div>
             </div>
 
             <div class="popup_hidden popup-section__alert">
                 <img src="<%=require('./images/close.svg')%>" alt="close" class="popup-section__close">
                 <p class="popup-section__message">Пользователь успешно зарегистрирован!</p>
-                <a href="/" class="popup-section__link-auth">Войти</a>
+                <button class="button popup-section__link-auth">Войти</button>
             </div>
 
         </section>
