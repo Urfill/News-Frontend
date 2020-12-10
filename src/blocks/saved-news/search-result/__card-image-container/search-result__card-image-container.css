@@ -1,5 +1,5 @@
 .search-result__card-image-container {
-    height: 272px;
+    height: auto;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {

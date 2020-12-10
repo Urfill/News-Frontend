@@ -5,6 +5,15 @@
     line-height: 30px;
     margin: 0px;
     margin-top: 12px;
+    height: 60px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.search-result__card-title:hover {
+    /* border-color: #2f71e5; */
+    color: #2f71e5;
+    transition: 1s;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {

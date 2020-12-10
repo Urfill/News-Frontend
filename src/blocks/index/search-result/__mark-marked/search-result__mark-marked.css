@@ -1,0 +1,13 @@
+.search-result__mark-marked {
+    background-image: url('../../../../images/icons/mark-marked.svg');
+    background-repeat: no-repeat;
+    border: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+}

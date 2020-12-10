@@ -16,6 +16,7 @@
 @import url('./__card-image/search-result__card-image.css');
 @import url('./__mark-container/search-result__mark-container.css');
 @import url('./_hidden/search-result_hidden.css');
+@import url('./__mark-marked/search-result__mark-marked.css');
 
 .search-result {
     background-color: #F5F6F7;

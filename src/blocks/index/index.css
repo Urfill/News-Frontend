@@ -5,6 +5,7 @@
 @import url('../../blocks/index/standart-text/standart-text.css');
 @import url('../../blocks/index/link/link.css');
 @import url('../../blocks/index/button/button.css');
+@import url('../../blocks/index/search-error/search-error.css');
 
 @import url('../../blocks/index/header-section/header-section.css');
 @import url('../../blocks/index/search-result/search-result.css');
@@ -22,4 +23,9 @@
     .page {
         width: 100%;
     }
+}
+
+/* patch */
+.fa.fa-sign-out { 
+    margin-left: 5px;
 }
