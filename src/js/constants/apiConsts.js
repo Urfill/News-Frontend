@@ -7,7 +7,8 @@ const url = 'http://newsapi.org/v2/everything?q=';
 const apiKey = 'f7c168304e3d45e7a0d8a3cc13ceb1ba';
 
 // local-backend
-const localBackendUrl = 'http://localhost:3000/';
+// const localBackendUrl = 'http://localhost:3000/';
+const localBackendUrl = 'https://sekizos-storage.students.nomoreparties.space/';
 const cardsLoadCount = 100;
 const daysCount = 7;
 const routs = {
