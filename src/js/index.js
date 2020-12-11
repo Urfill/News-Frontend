@@ -335,10 +335,11 @@ function setAllListeners() {
             headerLinkSignout.addEventListener('click', logout);
             localStorage.setItem('token', res.token);
             const usname = getUserInfo()
-              .then(() => {
+              .then((name) => {
+                console.log(name);
                 const header = new Header({
                   auth: true,
-                  userName: res,
+                  userName: name,
                 });
               });
             popup.close();

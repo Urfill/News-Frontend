@@ -9,6 +9,7 @@ export default class MainApi {
   signup(email, password, name) { // signup // POST
     return fetch(`${this.url + this.routs.signUp}`, {
       method: 'POST',
+      mode: 'cors',
       headers: {
         'Content-Type': 'application/json',
       },
@@ -20,12 +21,12 @@ export default class MainApi {
     })
       .then((res) => {
         if (!res.ok) {
-          // console.log('signup POST bad'); // test
-          // console.log(res); // test
+          console.log('signup POST bad'); // test
+          console.log(res); // test
           return Promise.reject(new Error(`Ошибка: ${res.status}`));
         }
-        // console.log('signup POST good'); // test
-        // console.log(res); // test
+        console.log('signup POST good'); // test
+        console.log(res); // test
         return res.json();
       })
       .catch((err) => {
@@ -39,6 +40,7 @@ export default class MainApi {
   signin(email, password) { // signin // POST
     return fetch(`${this.url + this.routs.signIn}`, {
       method: 'POST',
+      mode: 'cors',
       credentials: 'include',
       headers: {
         'Content-Type': 'application/json',
@@ -50,12 +52,12 @@ export default class MainApi {
     })
       .then((res) => {
         if (!res.ok) {
-          // console.log('signin POST bad'); // test
-          // console.log(res); // test
+          console.log('signin POST bad'); // test
+          console.log(res); // test
           return Promise.reject(new Error(`Ошибка: ${res.status}`));
         }
-        // console.log('signin POST good'); // test
-        // console.log(res); // test
+        console.log('signin POST good'); // test
+        console.log(res); // test
         return res.json();
       })
       .catch((err) => {
@@ -71,19 +73,21 @@ export default class MainApi {
 
     return fetch(`${this.url + this.routs.currentUser}`, {
       method: 'GET',
+      mode: 'cors',
       credentials: 'include',
+      cookies: `jwt=${this._token}`,
       headers: {
         'Content-Type': 'application/json',
       },
     })
       .then((res) => {
         if (!res.ok) {
-          // console.log('users/me GET bad'); // test
-          // console.log(res); // test
+          console.log('users/me GET bad'); // test
+          console.log(res); // test
           return Promise.reject(new Error(`Ошибка: ${res.status}`));
         }
-        // console.log('users/me GET good'); // test
-        // console.log(res); // test
+        console.log('users/me GET good'); // test
+        console.log(res); // test
         return res.json();
       })
       .catch((err) => {
