@@ -333,6 +333,7 @@ function setAllListeners() {
           if (res.token) {
             headerLinkSignin.removeEventListener('click', login);
             headerLinkSignout.addEventListener('click', logout);
+            // document.cookie = res.token;
             localStorage.setItem('token', res.token);
             const usname = getUserInfo()
               .then((name) => {
