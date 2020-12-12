@@ -11,6 +11,8 @@
 @import url('../../blocks/saved-news/footer-section/footer-section.css');
 @import url('../../blocks/saved-news/title-section/title-section.css');
 
+@import url('./popup/popup.css');
+@import url('./popup-section/popup-section.css');
 .page {
     /* border: 1px solid; */
 }

@@ -44,6 +44,7 @@ export default class Popup {
   open() {
     popupSection.classList.remove('popup_hidden');
     popupSignup.classList.remove('popup_hidden');
+    formSignupEmail.focus();
   }
 
 

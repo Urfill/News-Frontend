@@ -4,6 +4,10 @@ import {
   headerLinkSignout,
 } from '../constants/mainConsts';
 
+import {
+  monilePopupLogoutLink,
+} from '../constants/mobileConsts';
+
 export default class Header {
   constructor(data) {
     this.auth = data.auth;
@@ -18,6 +22,7 @@ export default class Header {
       headerLinkSignout.classList.remove('link_hidden');
 
       headerLinkSignout.textContent = this.userName;
+      monilePopupLogoutLink.textContent = this.userName;
 
       // adding fa-fa icon
       const icon = document.createElement('i');

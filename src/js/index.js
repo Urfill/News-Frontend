@@ -20,14 +20,16 @@ import {
   searchResultCardContainer,
   searchResultButtonContainer,
   searchResultButton,
-  popupSigninBtnClose, // signin popup
+  popupSignin, // signin popup
+  popupSigninBtnClose,
   popupSigninBtnLogin,
   popupSigninErr,
   popupSigninLink,
   formSignin,
   formSigninEmail,
   formSigninPassword,
-  popupSignupBtnClose, // signup popup
+  popupSignup, // signup popup
+  popupSignupBtnClose,
   popupSignupBtnLogin,
   popupSignupErr,
   popupSignupLink,
@@ -42,6 +44,16 @@ import {
   preloaderSection,
   preloader,
 } from './constants/mainConsts';
+import {
+  mobilePopup, // mobile popup
+  monilePopupCloseBtn,
+  monilePopupLogoBtn,
+  monilePopupMainPageLink,
+  monilePopupSavedNewsLink,
+  monilePopupAuthLink,
+  mobileMenuHeaderBtn,
+  monilePopupLogoutLink, // open mobile popup button
+} from './constants/mobileConsts';
 import {
   searchBtn, // main API const
   searchInput,
@@ -289,6 +301,43 @@ function setAllListeners() {
   formSignupName.addEventListener('input', (event) => {
     form.checkPopupInput(event.target);
     form.checkFormSignup(formSignup, formSignupEmail, formSignupPassword, formSignupName);
+  });
+
+
+  // mobilePopup, // mobile popup
+  // monilePopupCloseBtn,
+  // monilePopupLogoBtn,
+  // monilePopupMainPageLink,
+  // monilePopupSavedNewsLink,
+  // monilePopupAuthLink,
+  // mobileMenuHeaderBtn,
+
+  // mobile menu listeners
+  mobileMenuHeaderBtn.addEventListener('click', (event) => {
+    popupSection.classList.remove('popup_hidden');
+    mobilePopup.classList.remove('popup_hidden');
+    if (localStorage.getItem('token')) {
+      monilePopupAuthLink.classList.add('link_hidden');
+      monilePopupSavedNewsLink.classList.remove('link_hidden');
+      monilePopupLogoutLink.classList.remove('link_hidden');
+    } else {
+      monilePopupSavedNewsLink.classList.add('link_hidden');
+      monilePopupLogoutLink.classList.add('link_hidden');
+    }
+  });
+  monilePopupLogoutLink.addEventListener('click', (event) => {
+    logout();
+  });
+  monilePopupCloseBtn.addEventListener('click', (event) => {
+    popup.close();
+    popupSection.classList.add('popup_hidden');
+    mobilePopup.classList.add('popup_hidden');
+  });
+  monilePopupLogoBtn.addEventListener('click', (event) => {
+    document.location.reload();
+  });
+  monilePopupAuthLink.addEventListener('click', (event) => {
+    popup.open();
   });
 
   searchBtn.addEventListener('click', (event) => {

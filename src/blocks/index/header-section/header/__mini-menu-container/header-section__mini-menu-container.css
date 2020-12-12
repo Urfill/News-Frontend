@@ -1,5 +1,5 @@
 .header-section__mini-menu-container {
-    
+    cursor: pointer;
 }
 
 @media screen and (min-width: 767px) {

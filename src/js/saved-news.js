@@ -163,6 +163,10 @@ function keyword(massNews) {
   }
 }
 
+document.querySelector('.header-section__mini-menu-open').addEventListener('click', (event) => {
+  document.location.reload();
+});
+
 function titlesavearticles(element) {
   savedNewsTitleSectionTitle.textContent = `${savedNewsHeaderLinkSignout.textContent}, у вас ${element.length} сохраненных статей`;
   if (keyword(element).max1 !== undefined && keyword(element).max2 !== undefined) {
