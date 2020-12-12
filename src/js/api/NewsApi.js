@@ -23,7 +23,9 @@ export default class NewsApi {
 
   getNews(req) { // getNews from News-Api
     return fetch(
-      `${this.url}${req}&top-headlines?country=ru&from=${this.from}&to=${this.to}&cardsLoadCount=${this.cardsLoadCount}&sortBy=popularity&apiKey=${this.apiKey}`,
+      `${this.url}q=${req}&top-headlines?country=ru&from=${this.from}&to=${this.to}&cardsLoadCount=${this.cardsLoadCount}&sortBy=popularity&apiKey=${this.apiKey}`, {
+        mode: 'cors',
+      },
     )
       .then((res) => {
         if (!res.ok) {

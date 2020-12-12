@@ -1,4 +1,4 @@
-
+import { cardsTitle } from '../constants/apiConsts';
 
 export default class MainApi {
   constructor(url, routs) {
@@ -96,6 +96,39 @@ export default class MainApi {
 
   getArticles(token) { // articles // GET
     this.token = token;
+    return fetch(`${this.url + this.routs.articles}`, {
+      method: 'GET',
+      credentials: 'include',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((res) => {
+        if (!res.ok) {
+          // console.log('articles GET bad'); // test
+          // console.log(res); // test
+          return Promise.reject(new Error(`Ошибка: ${res.status}`));
+        }
+        // console.log('articles GET good'); // test
+        // console.log(res); // test
+        return res.json();
+      })
+      // .then((data) => {
+      //   for (let i = 0; i < data.data.length; i++) {
+      //     console.log(data.data[i].title);
+      //   }
+      // })
+      .catch((err) => {
+        if (err.message === 'Failed to fetch') {
+          throw new Error('Something wrong with getArticles');
+        }
+        throw err;
+      });
+  }
+
+  getArticlesByTitle() { // articles // GET
+    const token = localStorage.getItem('token');
+
     return fetch(`${this.url + this.routs.articles}`, {
       method: 'GET',
       credentials: 'include',
