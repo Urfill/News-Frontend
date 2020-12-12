@@ -39,6 +39,8 @@ import {
   popupAlertBtnClose,
   popupAlertLink,
   addingArticles, // other
+  preloaderSection,
+  preloader,
 } from './constants/mainConsts';
 import {
   searchBtn, // main API const
@@ -292,6 +294,13 @@ function setAllListeners() {
   searchBtn.addEventListener('click', (event) => {
     if (searchInput.checkValidity() && searchInput.value !== '') {
       event.preventDefault();
+
+      // turn off while searching
+      searchBtn.setAttribute('disabled', '');
+      searchInput.setAttribute('disabled', '');
+      preloaderSection.classList.remove('preloader-section_hidden'); // patch
+      preloader.classList.remove('circle-preloader_hidden'); // patch
+
       length = 0;
       while (searchResultCardContainer.firstChild) {
         searchResultCardContainer.removeChild(searchResultCardContainer.firstChild);
@@ -310,6 +319,12 @@ function setAllListeners() {
               searchResultSection.classList.add('search-result_hidden');
               searchErrSection.classList.remove('search-error_hidden');
             }
+
+            // turn on after searching
+            searchBtn.removeAttribute('disabled', '');
+            searchInput.removeAttribute('disabled', '');
+            preloaderSection.classList.add('preloader-section_hidden'); // patch
+            preloader.classList.add('circle-preloader_hidden'); // patch
           }
         })
         .catch((err) => {
@@ -388,4 +403,3 @@ function start() {
 
 // ----------------------------------other----------------------------------------- \\
 start();
-

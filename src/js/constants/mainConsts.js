@@ -47,6 +47,10 @@ const popupAlert = popupSection.querySelector('.popup-section__alert'); // alert
 const popupAlertBtnClose = popupAlert.querySelector('.popup-section__close');
 const popupAlertLink = popupAlert.querySelector('.popup-section__link-auth');
 
+// preloader-section
+const preloaderSection = document.querySelector('.preloader-section');
+const preloader = preloaderSection.querySelector('.circle-preloader');
+
 // other
 const addingArticles = 3;
 
@@ -82,4 +86,6 @@ export {
   popupAlertBtnClose,
   popupAlertLink,
   addingArticles, // other
+  preloaderSection,
+  preloader,
 };
