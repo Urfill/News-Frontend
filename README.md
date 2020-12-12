@@ -10,10 +10,9 @@ We added some new functional in project:
 
 ## How to use?
 So, it's time to talk about "How 2 use this crap?".
-1. first of all u need to download [local backend](https://github.com/Se-ki-zo/News-Backend).
-2. then download [frontend code](https://github.com/Se-ki-zo/News-Frontend/tree/level-3).
-3. then run both of them with - npm run dev.
-4. Profit
+1. open [gh-p](https://se-ki-zo.github.io/News-Frontend/), or download [orig](https://github.com/Se-ki-zo/News-Frontend/tree/level-3) and run with - npm run dev
+2. try to do smt.
+3. profit.
 
 ## Feedback'n'FAQ
 To get some feedback u can ask ur questions by ma mail urfill21@gmail.com

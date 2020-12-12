@@ -389,15 +389,3 @@ function start() {
 // ----------------------------------other----------------------------------------- \\
 start();
 
-// const cardsTitle = [];
-
-// mainapi.getArticlesByTitle()
-//   .then((data) => {
-//     for (let i = 0; i < data.data.length; i++) {
-//       cardsTitle.push(data.data[i].title);
-//     }
-//     console.log(cardsTitle); // массив
-//   })
-//   .then(() => cardsTitle);
-
-// console.log(cardsTitle); // псевдомассив
