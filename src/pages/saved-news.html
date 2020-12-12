@@ -17,23 +17,25 @@
     <div class="page">
 
         <header class="header">
-            <a href="/index.html" class="header__link-logo">
+            <a href="./saved-news.html" class="header__link-logo">
                 <img src="<%=require('./../images/logo-black.png')%>" alt="NewsExplorer" class="header__logo">
             </a>
 
             
             <div class="header-section__mini-menu-container">
+                <a href="./">
                 <img src="<%=require('./../images/icons/mini-menu-open-black-native.svg')%>" alt="menu"
                     class="header-section__mini-menu-open">
+                </a>
             </div>
 
             <nav class="header__navigation">
-                <a href="./saved-news.html" class="standart-text standart-text_black link header__link-main-page">Главная</a>
+                <a href="./" class="standart-text standart-text_black link header__link-main-page">Главная</a>
                 <a href="./saved-news.html"
                     class="standart-text standart-text_black link link_hidden header__link-auth">Авторизоваться</a>
                 <a href="./saved-news.html" class="standart-text standart-text_black link header__link-saved">Сохраненные
                     статьи</a>
-                <a href="./saved-news.html" class="standart-text standart-text_black link header__link-logout">User&nbsp;&nbsp;<i
+                <a href="./" class="standart-text standart-text_black link header__link-logout">User&nbsp;&nbsp;<i
                         class="fa fa-sign-out" aria-hidden="true"></i></a>
             </nav>
         </header>
@@ -43,8 +45,34 @@
             <h1 class="title-section__title">Грета, у вас 5 сохранённых статей</h1>
             
             <div class="title-section__description-container">
-                <p class="title-section__description">По ключевым словам:&nbsp;</p>
+                <!-- test -->
+                <!-- <p class="title-section__description">По ключевым словам:&nbsp;</p> --> 
                 <p class="title-section__description_bold">Природа, Тайга и 2-м другим</p>
+            </div>
+        </section>
+
+        <section class="popup_hidden popup-section">
+
+            <div class="popup popup_hidden popup-section__mini-menu-popup">
+                <div class="popup-section__mini-menu-popup-header">
+                    <a href="./" class="popup-section__mini-menu-logo-container">
+                        <img src="<%=require('../images/logo.png')%>" alt="NewsExplorer"
+                            class="popup-section__mini-menu-logo">
+                    </a>
+
+                    <img src="<%=require('../images/icons/mini-menu-close-native.svg')%>" alt="menu"
+                        class="popup-section__mini-menu-close">
+                </div>
+
+                <nav class="popup-section__mini-menu-navigation">
+                    <a href="./index.html"
+                        class="standart-text standart-text_white link popup-section__link-main-page">Главная</a>
+                    <a href="./saved-news.html"
+                        class="standart-text standart-text_white link link_hidden popup-section__link-saved">Сохраненные
+                        статьи</a>
+                    <button class="standart-text standart-text_white link popup-section__link-auth-button">Авторизоваться</button>
+                    <button class="standart-text standart-text_white link link_hidden popup-section__link-logout-button">User</button>
+                </nav>
             </div>
         </section>
 

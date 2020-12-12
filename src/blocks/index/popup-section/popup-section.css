@@ -25,6 +25,7 @@
 @import url('./__mini-menu-open/popup-section__mini-menu-open.css');
 @import url('./__mini-menu-popup-header/popup-section__mini-menu-popup-header.css');
 @import url('./__mini-menu-popup/popup-section__mini-menu-popup.css');
+@import url('./__link-logout-button/popup-section__link-logout-button.css');
 
 .popup-section {
     display: flex;
@@ -47,5 +48,6 @@
         left: 0;
         width: 100%;
         height: 100%;
+        background-color: #000000c2;
     }
 }

@@ -1,0 +1,12 @@
+@import url('./preloader/preloader.css');
+
+.preloader-section {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader-section_hidden {
+    display: none;
+}

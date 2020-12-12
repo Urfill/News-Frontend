@@ -1,3 +1,11 @@
+@import url('./_active/button_active.css');
+
 .button:focus {
     outline: none;
+}
+
+.button {
+    background: no-repeat;
+    border: none;
+    cursor: pointer;
 }

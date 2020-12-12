@@ -13,10 +13,10 @@
 }
 
 /*  */
-.search-result__mark:focus { 
+/* .search-result__mark:focus { 
     background-image: url('../../../../images/icons/mark-marked.svg');
     background-repeat: no-repeat;
-}
+} */
 
 .search-result__mark:hover {
     background-image: url('../../../../images/icons/mark-hover.svg');

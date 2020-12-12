@@ -2,5 +2,12 @@
     display: flex;
     align-items: center;
     height: -webkit-fill-available;
-    border-bottom: 3px solid #fff;
+    /* border-bottom: 3px solid #fff; */
+    border-bottom: 3px solid #adcaff00;
+}
+
+.header__link-saved:hover {
+    border-color: #adcaff;
+    color: #adcaff;
+    transition: 1s;
 }

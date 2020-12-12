@@ -1,0 +1,12 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .popup-section__link-logout-button {
+        border: 1px solid white;
+        box-sizing: border-box;
+        border-radius: 100px;
+        padding: 12px;
+        text-align: center;
+        color: white;
+        background-color: inherit;
+        margin: 40px 0 0 0;
+    }
+}
