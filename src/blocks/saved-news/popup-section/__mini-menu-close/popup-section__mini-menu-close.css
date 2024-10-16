@@ -1,0 +1,5 @@
+@import url('./_hidden/popup-section__mini-menu-close_hidden.css');
+
+.popup-section__mini-menu-close {
+    cursor: pointer;
+}

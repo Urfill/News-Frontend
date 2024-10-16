@@ -1,0 +1,16 @@
+.popup-section__link-auth {
+    text-decoration: none;
+    color: #2f71e5;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .popup-section__link-auth {
+        border: 1px solid white;
+        box-sizing: border-box;
+        border-radius: 100px;
+        padding: 12px;
+        text-align: center;
+        color: #2f71e5;
+        margin: 40px 0 0 0;
+    }
+}

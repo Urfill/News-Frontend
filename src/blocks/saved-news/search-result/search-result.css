@@ -1,0 +1,31 @@
+@import url('./__card-image-container/search-result__card-image-container.css');
+@import url('./__card-info-container/search-result__card-info-container.css');
+@import url('./__card/search-result__card.css');
+@import url('./__date/search-result__date.css');
+@import url('./__mark-alert-container/search-result__mark-alert-container.css');
+@import url('./__mark-alert/search-result__mark-alert.css');
+@import url('./__mark/search-result__mark.css');
+@import url('./__source/search-result__source.css');
+@import url('./__text/search-result__text.css');
+@import url('./__title/search-result__title.css');
+@import url('./__show-more-container/search-result__show-more-container.css');
+@import url('./__show-more-button/search-result__show-more-button.css');
+@import url('./__card-container/search-result__card-container.css');
+@import url('./__card-title/search-result__card-title.css');
+@import url('./__container/search-result__container.css');
+@import url('./__card-image/search-result__card-image.css');
+@import url('./__mark-container/search-result__mark-container.css');
+@import url('./_hidden/search-result_hidden.css');
+@import url('./__tag/search-result__tag.css');
+@import url('./__tag-container/search-result__tag-container.css');
+
+.search-result {
+    background-color: #F5F6F7;
+    /* height: 974px; */
+}
+
+/* @media screen and (min-width: 320px) and (max-width: 767px) {
+    .search-result {
+        background-color: #f5f6f7;
+    }
+} */

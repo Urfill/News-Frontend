@@ -1,0 +1,15 @@
+.search-error__title {
+    align-self: center;
+    color: black;
+    font-family: Roboto Slab,Arial,sans-serif;
+    font-size: 40px;
+    line-height: 46px;
+    margin: 0px;
+    text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    .search-error__title {
+        font-size: 30px;
+    }
+}

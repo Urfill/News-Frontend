@@ -1,0 +1,12 @@
+.search-error__paragraph {
+    /* text-align: center; */
+    font-family: Roboto Slab,Arial,sans-serif;
+    color: gray;
+    align-self: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    .search-error__paragraph {
+
+    }
+}

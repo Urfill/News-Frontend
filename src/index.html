@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Sekizo">
+    <link rel="shortcut icon" href="<%=require('./images/favicon/favicon.png')%>" type="image/x-icon">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
+
+    <meta name="description" content="News Explorer - поиск, это просто!">
+    <title>News > Explorer</title>
+</head>
+
+<body>
+    <div class="page">
+        <!-- ПРИМЕЧАНИЕ: для перехода на вторую стр. тыкни на лого -->
+        <!-- ПРИМЕЧАНИЕ: для открытия/скрытия блоков добавить/убрать класс - [class-name]_hidden -->
+        <section class="header-section">
+            <header class="header">
+                <a href="./" class="header__link-logo">
+                    <img src="<%=require('./images/logo.png')%>" alt="NewsExplorer" class="header__logo">
+                </a>
+
+                <div class="header-section__mini-menu-container">
+                    <img src="<%=require('./images/icons/mini-menu-open-white-native.svg')%>" alt="menu"
+                        class="header-section__mini-menu-open">
+                </div>
+
+                <nav class="header__navigation">
+                    <a href="./" class="standart-text standart-text_white link header__link-main-page">Главная</a>
+                    <button
+                        class="button standart-text standart-text_white link header__link-auth">Авторизоваться</button>
+                    <a href="./saved-news.html"
+                        class="standart-text standart-text_white link link_hidden header__link-saved">Сохраненные
+                        статьи</a>
+                    <a href="./"
+                        class="standart-text standart-text_white link link_hidden header__link-logout">Выход&nbsp;&nbsp;<i
+                            class="fa fa-sign-out" aria-hidden="true"></i></a>
+                </nav>
+            </header>
+
+
+
+            <div class="search-section">
+                <div class="search-section__container">
+                    <h1 class="search-section__title">Что творится в мире?</h1>
+
+                    <p class="standart-text standart-text_white search-section__paragraph">Находите самые свежие статьи
+                        на любую тему и сохраняйте в
+                        своём
+                        личном кабинете.</p>
+
+                    <!-- test -->
+                    <form class="header-search__field" name="searchnews">
+                        <div class="search-section__search-field">
+                            <input class="search-section__search-input" type="text" placeholder="Введите тему новости"
+                                autocomplete="off" maxlength="30" minlength="2" required type="text">
+                            <button class="button search-section__search-button">Искать</button>
+                        </div>
+                    </form>
+                    <!-- test -->
+
+                    <div class="search-section__err-field">
+                        <p class="search-section__err-message">Ля-ля-ля я ошибка</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- test -->
+        <section class="search-error search-error_hidden">
+            <h3 class="search-error__title">Ничего не найдено</h3>
+            <p class="search-error__paragraph">К сожалению по вашему запросу ничего не найдено.</p>
+        </section>
+        <!-- test -->
+
+
+        <section class="preloader-section preloader-section_hidden">
+            <i class="circle-preloader circle-preloader_hidden"></i>
+        </section>
+
+
+        <section class="search-result search-result_hidden">
+
+
+
+            <div class="search-result__container">
+                <h3 class="search-result__title">Результаты поиска</h3>
+
+
+
+                <div class="search-result__card-container">
+
+                    <div class="search-result__card">
+                        <div class="search-result__card-image-container">
+                            <div class="search-result__mark-alert-container search-result__mark-alert-container_hidden">
+                                <p class="search-result__mark-alert search-result__mark-alert_hidden">Войдите, чтобы
+                                    сохранять статьи</p>
+                            </div>
+
+                            <button class="search-result__mark"></button>
+
+                            <img src="<%=require('./images/card1.jpg')%>" alt="search-result__card-image"
+                                class="search-result__card-image">
+
+                        </div>
+
+                        <div class="search-result__card-info-container">
+                            <p class="search-result__date">2 августа, 2019</p>
+                            <p class="search-result__card-title">Национальное достояние – парки</p>
+                            <p class="search-result__text">В 2016 году Америка отмечала важный юбилей: сто лет назад
+                                здесь
+                                начала складываться система национальных парков – охраняемых территорий, где и сегодня
+                                каждый может приобщиться к природе.</p>
+                            <p class="search-result__source">ЛЕНТА.РУ</p>
+                        </div>
+                    </div>
+
+                    <div class="search-result__card">
+                        <div class="search-result__card-image-container">
+                            <div class="search-result__mark-alert-container search-result__mark-alert-container_hidden">
+                                <p class="search-result__mark-alert search-result__mark-alert_hidden">Войдите, чтобы
+                                    сохранять статьи</p>
+                            </div>
+
+                            <button class="search-result__mark"></button>
+
+                            <img src="<%=require('./images/card2.jpg')%>" alt="search-result__card-image"
+                                class="search-result__card-image">
+
+                        </div>
+
+                        <div class="search-result__card-info-container">
+                            <p class="search-result__date">2 августа, 2019</p>
+                            <p class="search-result__card-title">Лесные огоньки: история одной фотографии</p>
+                            <p class="search-result__text">Фотограф отвлеклась от освещения суровой политической
+                                реальности Мексики, чтобы запечатлеть ускользающую красоту одного
+                                из местных чудес природы.</p>
+                            <p class="search-result__source">МЕДУЗА</p>
+                        </div>
+                    </div>
+
+                    <div class="search-result__card">
+                        <div class="search-result__card-image-container">
+                            <div class="search-result__mark-alert-container search-result__mark-alert-container_hidden">
+                                <p class="search-result__mark-alert search-result__mark-alert_hidden">Войдите, чтобы
+                                    сохранять статьи</p>
+                            </div>
+
+                            <button class="search-result__mark"></button>
+
+                            <img src="<%=require('./images/card3.jpg')%>" alt="search-result__card-image"
+                                class="search-result__card-image">
+
+                        </div>
+
+                        <div class="search-result__card-info-container">
+                            <p class="search-result__date">2 августа, 2019</p>
+                            <p class="search-result__card-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка
+                            </p>
+                            <p class="search-result__text">Знаменитый фотограф снимает первозданные леса России, чтобы
+                                рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую
+                                тайгу, где...</p>
+                            <p class="search-result__source">РИА</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="search-result__show-more-container search-result__show-more-container_hidden">
+                    <button class="link standart-text_black search-result__show-more-button">Показать еще</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="author-section">
+            <img class="author-section__photo" src="<%=require('./images/author-photo_new.jpg')%>" alt="author-photo">
+
+            <div class="author-section__about">
+                <h2 class="author-section__title">Об авторе</h2>
+                <p class="standart-text standart-text_black author-section__author-about">Проект News-Frontend создан разработчиком, который стремится создать удобный интерфейс для поиска и
+                    сохранения новостей по различным темам. В процессе обучения в Практикуме автор освоил современные
+                    технологии веб-разработки и научился применять их для создания интерактивных приложений. Проект
+                    демонстрирует навыки в использовании API для получения новостей, а также в разработке
+                    пользовательских интерфейсов, что позволяет ему предлагать качественные решения для будущих
+                    клиентов.
+                </p>
+                <p class="standart-text standart-text_black author-section__author-about">Дополнительную информацию
+                    можно найти <a href="https://github.com/Urfill/News-Frontend" target="_blank">здесь</a>.
+                </p>
+                <!-- <p class="standart-text standart-text_black author-section__author-about">Это блок с описанием автора
+                    проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки
+                    владеете.
+                </p>
+                <p class="standart-text standart-text_black author-section__author-about">Также можно рассказать о
+                    процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.
+                </p> -->
+            </div>
+        </section>
+
+
+        <section class="popup_hidden popup-section">
+
+            <div class="popup popup_hidden popup-section__mini-menu-popup">
+                <div class="popup-section__mini-menu-popup-header">
+                    <a href="./" class="popup-section__mini-menu-logo-container">
+                        <img src="<%=require('./images/logo.png')%>" alt="NewsExplorer"
+                            class="popup-section__mini-menu-logo">
+                    </a>
+
+                    <img src="<%=require('./images/icons/mini-menu-close-native.svg')%>" alt="menu"
+                        class="popup-section__mini-menu-close">
+                </div>
+
+                <nav class="popup-section__mini-menu-navigation">
+                    <a href="./index.html"
+                        class="standart-text standart-text_white link popup-section__link-main-page">Главная</a>
+                    <a href="./saved-news.html"
+                        class="standart-text standart-text_white link link_hidden popup-section__link-saved">Сохраненные
+                        статьи</a>
+                    <button
+                        class="standart-text standart-text_white link popup-section__link-auth-button">Авторизоваться</button>
+                    <button
+                        class="standart-text standart-text_white link link_hidden popup-section__link-logout-button">User</button>
+                </nav>
+            </div>
+
+            <div class="popup popup_hidden popup-section__login">
+                <img src="<%=require('./images/close.svg')%>" alt="close" class="popup-section__close">
+                <h4 class="popup-section__title">Вход</h4>
+
+                <div class="popup-section__form">
+                    <!-- test -->
+                    <form class="popup__form" name="signin">
+                        <div class="popup-section__field">
+                            <p class="popup-section__input-title">Email</p>
+                            <input autocomplete="off" name="email" required type="email"
+                                pattern="([a-z0-9]{1,}((-|\.)?[a-z0-9]{1,}))@[a-z0-9]{1,}(-[a-z0-9]{1,})?(\.[a-z]{2,})?(\.[a-z]{2,3})"
+                                placeholder="введите почту" class="popup-section__input">
+                            <p class="popup-section__err"></p>
+                        </div>
+
+                        <div class="popup-section__field">
+                            <p class="popup-section__input-title">Пароль</p>
+                            <input autocomplete="off" name="password" maxlength="30" minlength="6" required
+                                type="password" placeholder="введите пароль" class="popup-section__input">
+                            <p class="popup-section__err"></p>
+                        </div>
+
+                        <div class="popup-section__button-container">
+                            <p class="popup-section__general-err popup-section__general-err_hidden">Простите, возникла
+                                ошибка</p>
+                            <button class="button popup-section__button">Войти</button>
+                        </div>
+
+                    </form>
+                    <!-- test -->
+                </div>
+                <p class="popup-section__sentence">или <button
+                        class="button popup-section__link-auth">Зарегистрироваться</button></p>
+            </div>
+
+            <div class="popup popup_hidden popup-section__auth">
+                <img src="<%=require('./images/close.svg')%>" alt="close" class="popup-section__close">
+                <h4 class="popup-section__title">Регистрация</h4>
+
+                <div class="popup-section__form">
+                    <!-- test -->
+                    <form class="popup__form" name="signup">
+                        <div class="popup-section__field">
+                            <p class="popup-section__input-title">Email</p>
+                            <input autocomplete="off" name="email" required type="email"
+                                pattern="([a-z0-9]{1,}((-|\.)?[a-z0-9]{1,}))@[a-z0-9]{1,}(-[a-z0-9]{1,})?(\.[a-z]{2,})?(\.[a-z]{2,3})"
+                                placeholder="введите почту" class="popup-section__input">
+                            <p class="popup-section__err"></p>
+                        </div>
+
+                        <div class="popup-section__field">
+                            <p class="popup-section__input-title">Пароль</p>
+                            <input autocomplete="off" name="password" maxlength="30" minlength="6" required
+                                type="password" placeholder="введите пароль" class="popup-section__input">
+                            <p class="popup-section__err"></p>
+                        </div>
+
+                        <div class="popup-section__field">
+                            <p class="popup-section__input-title">Имя</p>
+                            <input autocomplete="off" name="name" maxlength="30" minlength="3" required type="text"
+                                placeholder="введите имя" class="popup-section__input">
+                            <p class="popup-section__err"></p>
+                        </div>
+
+
+                        <div class="popup-section__button-container">
+                            <p class="popup-section__general-err popup-section__general-err_hidden">Простите, возникла
+                                ошибка</p>
+                            <button class="button popup-section__button">Зарегистрироваться</button>
+                        </div>
+                    </form>
+                    <!-- test -->
+                </div>
+
+                <p class="popup-section__sentence">или <button class="button popup-section__link-auth">Войти</button>
+                </p>
+            </div>
+
+            <div class="popup popup_hidden popup-section__alert">
+                <img src="<%=require('./images/close.svg')%>" alt="close" class="popup-section__close">
+                <p class="popup-section__message">Пользователь успешно зарегистрирован!</p>
+                <button class="button popup-section__link-auth">Войти</button>
+            </div>
+
+        </section>
+
+
+        <footer class="footer-section">
+            <p class="standart-text footer-section__copyrights">© 2020 Supersite, Powered by News API</p>
+
+            <nav class="footer-section__navigation">
+                <a href="/" class="link standart-text standart-text_black footer-section__link-main-page">Главная</a>
+                <a href="https://meduza.io/feature/2016/06/01/kto-kruche-yandeks-ili-google" target="_blank"
+                    class="link standart-text standart-text_black footer-section__link-google">
+                    <i class="fa fa-google"></i>
+                </a>
+                <a href="https://github.com/Se-ki-zo" target="_blank"
+                    class="link standart-text standart-text_black footer-section__link-gh">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="https://vk.com/sekizo" target="_blank"
+                    class="link standart-text standart-text_black footer-section__link-fb">
+                    <i class="fa fa-vk"></i>
+                </a>
+            </nav>
+        </footer>
+
+    </div>
+</body>
+
+</html>

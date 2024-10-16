@@ -1,0 +1,10 @@
+button.button_active {
+    color: white;
+    background: #347eff;
+}
+
+button.button_active:hover {
+    color: white;
+    background: #aec9f7;
+    transition: 0.7s;
+}

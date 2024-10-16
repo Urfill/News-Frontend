@@ -1,0 +1,12 @@
+.footer-section__link-fb {
+    font-size: 20px;
+    margin: 0 12px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .footer-section__link-fb {
+        flex-grow: 0;
+        font-size: 20px;
+        margin: 0 5px;
+    }
+}

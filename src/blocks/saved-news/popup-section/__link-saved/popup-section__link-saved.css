@@ -1,0 +1,13 @@
+.popup-section__link-saved {
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .popup-section__link-saved {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        border-bottom: unset;
+        margin: 0px;
+    }
+}
