@@ -1,13 +1,11 @@
 npm i webpack --save-dev
 npm i webpack-cli --save-dev
 npm i webpack-dev-server --save-dev
-npm i eslint --save-dev
-npx i-peerdeps --dev eslint-config-airbnb-base
 npm i babel-loader --save-dev
 npm i @babel/cli --save-dev
 npm i @babel/core --save-dev
 npm i @babel/preset-env --save-dev
-npm i core-js@3.4.1 --save
+npm i core-js --save
 npm i --save babel-polyfill
 npm i mini-css-extract-plugin --save-dev
 npm i css-loader --save-dev
@@ -19,3 +17,7 @@ npm i cssnano --save-dev
 npm i gh-pages --save-dev
 npm i --save-dev optimize-css-assets-webpack-plugin
 npm i --save-dev favicons-webpack-plugin
+
+
+//npm i eslint --save-dev
+//npx i-peerdeps --dev eslint-config-airbnb-base

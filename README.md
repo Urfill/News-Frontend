@@ -1,4 +1,4 @@
-# Urfill's News-Frontend
+# Urfill's upd News-Frontend
 it's a simple project with some abilities to search news.
 
 ## Tech
