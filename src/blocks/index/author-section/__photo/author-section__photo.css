@@ -4,7 +4,7 @@
     margin-right: 156px;
     border-radius: 100%;
     border: 1px solid black;
-    object-fit: none;
+    object-fit: cover;
     /* object-fit: contain; */
 }
 
@@ -16,13 +16,13 @@
         margin: 0px;
         border-radius: 100%;
         border: 1px solid #000;
-        object-fit: revert;
+        /* object-fit: revert; */
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .author-section__photo {
-        object-fit: fill;
+        /* object-fit: fill; */
         width: 232px;
         height: 232px;
         margin: 0 32px 0 0;
@@ -34,6 +34,6 @@
         width: 364px;
         height: 364px;
         margin-right: 56px;
-        object-fit: fill;
+        /* object-fit: fill; */
     }
 }
