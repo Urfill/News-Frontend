@@ -1,15 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-
 const webpack = require('webpack');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-
-const isDev = process.env.NODE_ENV === 'development';
-
-// const ghpages = require('gh-pages');
 
 module.exports = {
   entry: {
@@ -18,81 +10,47 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js',
+    filename: '[name].[contenthash].js',
+    publicPath: '/', // Для GitHub Pages нужно указать корень или путь до подкаталога
+    // publicPath: '/News-Frontend/', - раскоментить в случае использования gh-pages, и закоментить предыдущую строчку
   },
   module: {
-    rules: [{
-      test: /\.css$/i,
-      use: [
-        (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-        {
-          loader: 'css-loader',
-          options: {
-            importLoaders: 2,
-          },
-        },
-        'postcss-loader',
-      ],
-    },
-    {
-      test: /\.js$/,
-      exclude: /node_modules/,
-      use: {
-        loader: 'babel-loader',
+    rules: [
+      {
+        test: /\.css$/i,
+        use: [
+          MiniCssExtractPlugin.loader, // Используем для продакшн
+          'css-loader',
+        ],
       },
-    },
-    {
-      test: /\.(png|jpg|gif|ico|svg)$/,
-      use: [{
-        loader: 'file-loader',
-        options: {
-          name: '[name][hash].[ext]',
-          outputPath: '',
-          esModule: false,
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
         },
-      }],
-    },
-    // {
-    //   test: /\.(png|jpe?g|gif)$/i,
-    //   use: [{
-    //     loader: 'file-loader',
-    //   }],
-    // },
-
-    {
-      test: /\.(eot|ttf|woff|woff2)$/,
-      loader: 'file-loader?name=./vendor/[name].[ext]',
-    },
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/i,
+        type: 'asset/resource', // Используем asset module для изображений
+      }
     ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.[contenthash].css',
-    }),
-    new OptimizeCssAssetsPlugin({
-      assetNameRegExp: /\.css$/g,
-      cssProcessor: require('cssnano'),
-      cssProcessorPluginOptions: {
-        preset: ['default'],
-      },
-      canPrint: true,
+      filename: 'style.[contenthash].css', // Генерируем CSS с хешем
     }),
     new HtmlWebpackPlugin({
-      template: './src/pages/saved-news.html',
-      inject: true,
-      chunks: ['savedNews'],
-      filename: 'saved-news.html',
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/index.html', // Шаблон для index.html
       inject: true,
       chunks: ['main'],
       filename: 'index.html',
     }),
-    new WebpackMd5Hash(),
-    new webpack.DefinePlugin({
-      NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+    new HtmlWebpackPlugin({
+      template: './src/pages/saved-news.html', // Шаблон для saved-news.html
+      inject: true,
+      chunks: ['savedNews'],
+      filename: 'saved-news.html',
     }),
-    // new FaviconsWebpackPlugin('./src/images/favicon/favicon.png'),
   ],
 };

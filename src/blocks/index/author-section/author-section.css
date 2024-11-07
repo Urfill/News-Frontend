@@ -7,8 +7,9 @@
 .author-section {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    align-items: center;
     margin-bottom: 80px;
+    margin-top: 80px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {

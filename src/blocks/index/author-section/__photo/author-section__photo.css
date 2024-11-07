@@ -1,7 +1,7 @@
 .author-section__photo {
     width: 464px;
     height: 464px;
-    margin-right: 156px;
+    margin-right: 5rem;
     border-radius: 100%;
     border: 1px solid black;
     object-fit: cover;
